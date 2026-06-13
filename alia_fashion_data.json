@@ -950,10 +950,7 @@
       "price": 450,
       "price_old": 750,
       "images": [
-        "https://i.postimg.cc/057Y3WT2/photo-2026-06-13-02-52-08.jpg",
-        "https://i.postimg.cc/3Jnv5PnT/photo-2026-06-13-02-53-29.jpg",
-        "https://i.postimg.cc/GhqywZqR/photo-2026-06-13-02-53-37.jpg",
-        "https://i.postimg.cc/RVXH5jGk/photo-2026-06-13-02-53-43.jpg"
+        "https://i.postimg.cc/zvBXf5hd/photo-1-2026-06-13-16-45-33.jpg، https://i.postimg.cc/T1wYPGbt/photo-2-2026-06-13-16-45-33.jpg، https://i.postimg.cc/QCtxMs7S/photo-3-2026-06-13-16-45-33.jpg، https://i.postimg.cc/brJNv8nn/photo-4-2026-06-13-16-45-33.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -985,7 +982,7 @@
         ]
       },
       "colorImages": {
-        "U": "https://i.postimg.cc/057Y3WT2/photo-2026-06-13-02-52-08.jpg",
+        "U": "https://i.postimg.cc/zvBXf5hd/photo-1-2026-06-13-16-45-33.jpg",
         "T": "https://i.postimg.cc/3Jnv5PnT/photo-2026-06-13-02-53-29.jpg",
         "H": "https://i.postimg.cc/GhqywZqR/photo-2026-06-13-02-53-37.jpg",
         "C": "https://i.postimg.cc/RVXH5jGk/photo-2026-06-13-02-53-43.jpg"
@@ -1726,5 +1723,5 @@
     "about": "Alia Fashion متجر متخصص في عبايات صيفي وشتوي بخامات مختارة وقصّات أنيقة تناسب كل مناسبة.",
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية."
   },
-  "exportedAt": "١٣‏/٦‏/٢٠٢٦، ٤:١٣:٠٩ م"
+  "exportedAt": "١٣‏/٦‏/٢٠٢٦، ٤:٤٦:٣٢ م"
 }
