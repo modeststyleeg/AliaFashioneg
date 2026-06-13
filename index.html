@@ -2017,21 +2017,22 @@ function importSiteData(){
 const GITHUB_DATA_URL = 'https://modeststyleeg.github.io/AliaFashioneg/alia_fashion_data.json';
 
 async function loadFromGithub(){
-  const hasLocal = localStorage.getItem(STORAGE_PRODUCTS);
-  if(!hasLocal){
-    // only fetch from GitHub if no local data
-    try{
-      const res = await fetch(GITHUB_DATA_URL + '?t=' + Date.now());
-      if(res.ok){
-        const data = await res.json();
-        if(data.products && data.products.length){
-          products = data.products;
-          localStorage.setItem(STORAGE_PRODUCTS, JSON.stringify(products));
-        }
-        if(data.settings) settings = {...settings, ...data.settings};
-        if(data.colors) colors = data.colors;
+  // Always fetch from GitHub
+  try{
+    const res = await fetch(GITHUB_DATA_URL + '?t=' + Date.now());
+    if(res.ok){
+      const data = await res.json();
+      if(data.products && data.products.length){
+        products = data.products;
+        localStorage.setItem(STORAGE_PRODUCTS, JSON.stringify(products));
       }
-    } catch(e){}
+      if(data.settings) settings = {...settings, ...data.settings};
+      if(data.colors) colors = data.colors;
+    }
+  } catch(e){
+    // fallback to localStorage if GitHub fails
+    const local = localStorage.getItem(STORAGE_PRODUCTS);
+    if(local) products = JSON.parse(local);
   }
   renderCatalog();
   updateCartUI();
