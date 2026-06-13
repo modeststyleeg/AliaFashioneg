@@ -1630,7 +1630,8 @@ byId('confirmProductOptions').onclick=()=>{
   if(p.hasColors&&!modalSelectedColor){alert('اختر اللون');return;}
   if(!modalSelectedSize){alert('اختر المقاس');return;}
   for(let i=0;i<modalQtyVal;i++){
-    cart.push({id:p.id,code:p.code,name:p.name,price:p.price,img:p.images[0]||'',color:modalSelectedColor,size:modalSelectedSize,qty:1});
+    const cartImg=(modalSelectedColor&&p.colorImages&&p.colorImages[modalSelectedColor])?p.colorImages[modalSelectedColor]:(p.images[0]||'');
+    cart.push({id:p.id,code:p.code,name:p.name,price:p.price,img:cartImg,color:modalSelectedColor,size:modalSelectedSize,qty:1});
   }
   // merge same items
   const merged=[];
