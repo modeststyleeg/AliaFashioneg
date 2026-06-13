@@ -148,9 +148,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(26,24,20,.96);backdrop-f
 .summary-row .total{font-size:1.15rem;font-weight:900;color:var(--brand)}
 
 /* ---- Modals ---- */
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:70;padding:16px;backdrop-filter:blur(4px)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:70;padding:16px;backdrop-filter:blur(4px);overflow:hidden}
 .modal.open{display:flex}
-.sheet{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:22px;max-width:1020px;width:100%;padding:24px;color:var(--text);max-height:90vh;overflow:auto;box-shadow:0 24px 80px rgba(0,0,0,.25)}
+.sheet{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:22px;max-width:min(1020px,calc(100vw - 32px));width:100%;padding:24px;color:var(--text);max-height:90vh;overflow:auto;box-shadow:0 24px 80px rgba(0,0,0,.25)}
 .sheet h3{margin:0 0 6px;font-size:1.25rem;font-weight:900}
 .modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
 label{display:block;margin:.7rem 0 .3rem;font-weight:700;font-size:.9rem}
@@ -158,7 +158,51 @@ input,select,textarea{width:100%;padding:.75rem 1rem;border-radius:14px;border:1
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 3px rgba(201,169,110,.15)}
 textarea{resize:vertical}
 .orders-wrap{overflow-x:auto;margin-top:12px}
-table{width:100%;border-collapse:collapse;min-width:800px}
+table{width:100%;border-collapse:collapse;min-width:600px}
+
+/* ---- Responsive Table → Cards on mobile ---- */
+@media(max-width:700px){
+  .orders-wrap{overflow-x:visible}
+  #ordersTableEl{min-width:unset;display:block}
+  #ordersTableEl thead{display:none}
+  #ordersTableEl tbody{display:flex;flex-direction:column;gap:12px}
+  #ordersTableEl tr{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:6px 12px;
+    background:#fff;
+    border:1px solid rgba(0,0,0,.09);
+    border-radius:16px;
+    padding:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
+    position:relative;
+  }
+  #ordersTableEl td{
+    display:flex;flex-direction:column;
+    font-size:.85rem;border:none;padding:0;
+    text-align:right;
+  }
+  #ordersTableEl td::before{
+    content:attr(data-label);
+    font-size:.72rem;font-weight:800;
+    color:var(--muted);margin-bottom:2px;
+    text-transform:uppercase;letter-spacing:.04em;
+  }
+  /* رقم الطلب فوق كل شيء */
+  #ordersTableEl td[data-label="#"]{
+    grid-column:1/-1;
+    flex-direction:row;align-items:center;gap:8px;
+    background:var(--cream);border-radius:8px;padding:6px 10px;
+    font-weight:900;font-size:.9rem;
+  }
+  #ordersTableEl td[data-label="#"]::before{
+    font-size:.75rem;font-weight:800;color:var(--muted);
+  }
+  /* المنتجات تاخد عرض كامل */
+  #ordersTableEl td[data-label="المنتجات"]{grid-column:1/-1}
+  /* الحالة تاخد عرض كامل */
+  #ordersTableEl td[data-label="الحالة"]{grid-column:1/-1;flex-direction:row;align-items:center;gap:8px;flex-wrap:wrap}
+}
 th{background:var(--cream);padding:10px 8px;text-align:center;font-weight:800;font-size:.88rem;border-bottom:2px solid var(--gold2)}
 td{padding:9px 8px;text-align:center;font-size:.87rem;border-bottom:1px solid rgba(0,0,0,.07)}
 tr:hover td{background:#faf8f5}
@@ -423,7 +467,6 @@ footer .footer-brand{font-size:1.1rem;font-weight:900;margin-bottom:4px;color:va
   .ty-section{padding:16px 14px}
   .ty-confirmed{gap:12px;padding:16px 14px}
   .orders-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-  table{min-width:700px}
   #announcementBar{font-size:.78rem;padding:7px 12px}
   #waFloat{bottom:16px;left:16px;width:52px;height:52px}
 }
@@ -917,7 +960,7 @@ footer .footer-brand{font-size:1.1rem;font-weight:900;margin-bottom:4px;color:va
     </div>
   </div>
   <div class="orders-wrap">
-    <table>
+    <table id="ordersTableEl">
       <thead>
         <tr><th>#</th><th>التاريخ</th><th>الاسم</th><th>الهاتف</th><th>المحافظة</th><th>الشحن</th><th>المنتجات</th><th>الإجمالي</th><th>الحالة</th></tr>
       </thead>
@@ -1974,20 +2017,20 @@ const STATUS_CLASSES={new:'status-new',delivering:'status-delivering',delivered:
 function renderOrdersTable(){
   const tbody=byId('ordersTable');
   const all=JSON.parse(localStorage.getItem(STORAGE_ORDERS)||'[]');
-  if(!all.length){tbody.innerHTML='<tr><td colspan="9" class="muted">لا توجد طلبات حتى الآن</td></tr>';return;}
+  if(!all.length){tbody.innerHTML='<tr><td colspan="9" class="muted" style="padding:20px;text-align:center">لا توجد طلبات حتى الآن</td></tr>';return;}
   tbody.innerHTML=all.map((o,i)=>{
     const items=(o.products||[]).map(p=>`${p.name} (${p.size||'-'}/${p.color||'-'}) × ${p.qty||1}`).join('<br>');
     const status=o.status||'new';
     return `<tr>
-      <td>${i+1}</td>
-      <td>${o.createdAt||''}</td>
-      <td>${o.name}</td>
-      <td>${o.phone}</td>
-      <td>${o.province}</td>
-      <td>${o.shippingFee||0} ج</td>
-      <td style="text-align:right;font-size:.82rem">${items}</td>
-      <td><strong>${o.total} ج</strong></td>
-      <td>
+      <td data-label="#">${i+1}</td>
+      <td data-label="التاريخ">${o.createdAt||''}</td>
+      <td data-label="الاسم">${o.name}</td>
+      <td data-label="الهاتف">${o.phone}</td>
+      <td data-label="المحافظة">${o.province}</td>
+      <td data-label="الشحن">${o.shippingFee||0} ج</td>
+      <td data-label="المنتجات" style="text-align:right;font-size:.82rem">${items}</td>
+      <td data-label="الإجمالي"><strong>${o.total} ج</strong></td>
+      <td data-label="الحالة">
         <select class="small" data-oidx="${i}" onchange="changeOrderStatus(${i},this.value)" style="padding:4px 6px;border-radius:8px;font-size:.8rem">
           <option value="new" ${status==='new'?'selected':''}>جديد</option>
           <option value="delivering" ${status==='delivering'?'selected':''}>قيد التوصيل</option>
