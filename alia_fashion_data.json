@@ -435,8 +435,7 @@
         ],
         "موف": [
           "M",
-          "L",
-          "XL"
+          "L"
         ],
         "زيتي": [
           "M",
@@ -444,8 +443,7 @@
           "XL"
         ],
         "فسفوري": [
-          "M",
-          "XL"
+          "M"
         ],
         "اسود": [
           "M",
@@ -565,8 +563,8 @@
       "sizes": [],
       "colors": [
         "B",
-        "B",
-        "Z"
+        "Z",
+        "N"
       ],
       "colorSizes": {
         "B": [
@@ -574,11 +572,18 @@
         ],
         "Z": [
           "M"
+        ],
+        "N": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
         ]
       },
       "colorImages": {
         "B": "https://i.postimg.cc/SRkq4FCF/photo-64-2026-06-12-05-00-55.jpg",
-        "Z": "https://i.postimg.cc/x8nYQDH7/photo-65-2026-06-12-05-00-55.jpg"
+        "Z": "https://i.postimg.cc/x8nYQDH7/photo-65-2026-06-12-05-00-55.jpg",
+        "N": "https://i.postimg.cc/MHwbxgYG/image.png"
       }
     },
     {
@@ -711,7 +716,7 @@
         "G",
         "B",
         "P",
-        "B"
+        "K"
       ],
       "colorSizes": {
         "G": [
@@ -727,12 +732,17 @@
           "L",
           "XL",
           "XXL"
+        ],
+        "K": [
+          "M",
+          "XXL"
         ]
       },
       "colorImages": {
         "G": "https://i.postimg.cc/J0Mm8VZy/photo-23-2026-06-12-05-00-55.jpg",
         "B": "https://i.postimg.cc/mkj42Xy7/photo-62-2026-06-12-05-00-55.jpg",
-        "P": "https://i.postimg.cc/kGsCX1vx/photo-61-2026-06-12-05-00-55.jpg"
+        "P": "https://i.postimg.cc/kGsCX1vx/photo-61-2026-06-12-05-00-55.jpg",
+        "K": "https://i.postimg.cc/d3YVHL7W/image.png"
       }
     },
     {
@@ -798,8 +808,8 @@
         "N",
         "H",
         "J",
-        "H",
-        "Y"
+        "Y",
+        "C"
       ],
       "colorSizes": {
         "N": [
@@ -823,13 +833,20 @@
           "L",
           "XL",
           "XXL"
+        ],
+        "C": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
         ]
       },
       "colorImages": {
         "N": "https://i.postimg.cc/gcVkT48P/photo-98-2026-06-12-05-00-55.jpg",
         "H": "https://i.postimg.cc/9XdFn1Z4/photo-95-2026-06-12-05-00-55.jpg",
         "J": "https://i.postimg.cc/BZTQVNH3/photo-96-2026-06-12-05-00-55.jpg",
-        "Y": "https://i.postimg.cc/9XdFn1ZF/photo-94-2026-06-12-05-00-55.jpg"
+        "Y": "https://i.postimg.cc/9XdFn1ZF/photo-94-2026-06-12-05-00-55.jpg",
+        "C": "https://i.postimg.cc/0yTRdhKH/image.png"
       }
     },
     {
@@ -971,11 +988,9 @@
           "XL"
         ],
         "H": [
-          "XL",
-          "XXL"
+          "XL"
         ],
         "C": [
-          "M",
           "L",
           "XL",
           "XXL"
@@ -1016,8 +1031,7 @@
           "XXL"
         ],
         "L": [
-          "M",
-          "XXL"
+          "M"
         ],
         "P": [
           "M",
@@ -1392,7 +1406,6 @@
       "sizes": [
         "M",
         "L",
-        "XL",
         "XXL"
       ],
       "colors": [],
@@ -1590,7 +1603,6 @@
       "hasColors": false,
       "sizes": [
         "L",
-        "4XL",
         "5XL"
       ],
       "colors": [],
@@ -1611,7 +1623,6 @@
       "hasColors": false,
       "sizes": [
         "XL",
-        "4XL",
         "5XL"
       ],
       "colors": [],
@@ -1701,6 +1712,61 @@
       "colors": [],
       "colorSizes": {},
       "colorImages": {}
+    },
+    {
+      "id": 1781641986527,
+      "code": "5266",
+      "name": "سوت 3 قطع ووتر بروف",
+      "desc": "الخامة ووتر بروف — 3 قطع توب + بنطلون + بندانة",
+      "price": 900,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/hG3BQhbm/photo-1-2026-06-16-23-32-17.jpg، https://i.postimg.cc/5tkVQjqC/photo-2-2026-06-16-23-32-17.jpg، https://i.postimg.cc/Bvw0Ptcj/photo-3-2026-06-16-23-32-17.jpg"
+      ],
+      "category": "summer",
+      "hasColors": false,
+      "sizes": [
+        "4XL"
+      ],
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
+    },
+    {
+      "id": 1781642171188,
+      "code": "بيزك",
+      "name": "بيزك رويال",
+      "desc": "بيزك رويال تايجر كت",
+      "price": 450,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/7YqWDw0d/photo-1-2026-06-16-23-34-10.jpg، https://i.postimg.cc/y6mbwk3B/photo-2-2026-06-16-23-34-10.jpg، https://i.postimg.cc/WpGHQhFx/photo-3-2026-06-16-23-34-10.jpg"
+      ],
+      "category": "summer",
+      "hasColors": true,
+      "sizes": [],
+      "colors": [
+        "ا",
+        "I",
+        "I"
+      ],
+      "colorSizes": {
+        "ا": [
+          "M",
+          "L",
+          "XL"
+        ],
+        "I": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "colorImages": {
+        "ا": "https://i.postimg.cc/7YqWDw0d/photo-1-2026-06-16-23-34-10.jpg",
+        "I": "https://i.postimg.cc/WpGHQhFx/photo-3-2026-06-16-23-34-10.jpg"
+      }
     }
   ],
   "orders": [],
@@ -1721,7 +1787,8 @@
       "دفع عند الاستلام لجميع المحافظات 💳"
     ],
     "about": "Alia Fashion متجر متخصص في عبايات صيفي وشتوي بخامات مختارة وقصّات أنيقة تناسب كل مناسبة.",
-    "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية."
+    "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
+    "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "١٣‏/٦‏/٢٠٢٦، ٤:٤٦:٣٢ م"
+  "exportedAt": "١٦‏/٦‏/٢٠٢٦، ١١:٣٦:١٧ م"
 }
