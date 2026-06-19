@@ -1103,8 +1103,7 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
-        "M",
-        "L"
+        "M"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1125,8 +1124,7 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
-        "M",
-        "L"
+        "M"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1327,8 +1325,7 @@
           "XXL"
         ],
         "A": [
-          "M",
-          "XL"
+          "M"
         ],
         "I": [
           "M",
@@ -1573,8 +1570,6 @@
       "colorSizes": {
         "Q": [
           "M",
-          "L",
-          "XL",
           "XXL"
         ],
         "F": [
@@ -1790,5 +1785,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "١٦‏/٦‏/٢٠٢٦، ١١:٣٦:١٧ م"
+  "exportedAt": "١٩‏/٦‏/٢٠٢٦، ٥:٠١:٤٢ ص"
 }
