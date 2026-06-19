@@ -2345,6 +2345,25 @@ async function loadFromGithub(){
 }
 
 loadFromGithub();
+  // فتح موديل مباشرة من الرابط
+window.addEventListener('load', () => {
+  const params = new URLSearchParams(window.location.search);
+  const productId = params.get('product');
+
+  if (!productId) return;
+
+  const openProduct = () => {
+    const index = products.findIndex(
+      p => String(p.id) === String(productId)
+    );
+
+    if (index !== -1) {
+      openProductOptions(index);
+    }
+  };
+
+  setTimeout(openProduct, 1500);
+});
 </script>
 </body>
 </html>
