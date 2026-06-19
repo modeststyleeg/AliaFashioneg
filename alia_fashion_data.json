@@ -1762,6 +1762,71 @@
         "ا": "https://i.postimg.cc/7YqWDw0d/photo-1-2026-06-16-23-34-10.jpg",
         "I": "https://i.postimg.cc/WpGHQhFx/photo-3-2026-06-16-23-34-10.jpg"
       }
+    },
+    {
+      "id": 1781906509580,
+      "code": "5277",
+      "name": "دريس كت وجاكت",
+      "desc": "الخامة: الدريس روز كريب والجاكت روزالين",
+      "price": 1150,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/KjcLwdyz/photo-1-2026-06-20-00-59-12.jpg، https://i.postimg.cc/mkZMJ0Gr/photo-2-2026-06-20-00-59-12.jpg، https://i.postimg.cc/WzprCQPb/photo-3-2026-06-20-00-59-12.jpg"
+      ],
+      "category": "summer",
+      "hasColors": true,
+      "sizes": [],
+      "colors": [
+        "m",
+        "I",
+        "L"
+      ],
+      "colorSizes": {
+        "m": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "I": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "L": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "colorImages": {
+        "m": "https://i.postimg.cc/KjcLwdyz/photo-1-2026-06-20-00-59-12.jpg",
+        "I": "https://i.postimg.cc/mkZMJ0Gr/photo-2-2026-06-20-00-59-12.jpg",
+        "L": "https://i.postimg.cc/WzprCQPb/photo-3-2026-06-20-00-59-12.jpg"
+      }
+    },
+    {
+      "id": 1781906618924,
+      "code": "5245",
+      "name": "عبايه كريب",
+      "desc": "الخامة: كريب",
+      "price": 1000,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/XY5ZHVyk/photo-1-2026-06-20-01-02-48.jpg، https://i.postimg.cc/Qd7B4XWb/photo-2-2026-06-20-01-02-48.jpg، https://i.postimg.cc/XY5ZHVyc/photo-3-2026-06-20-01-02-48.jpg، https://i.postimg.cc/DwGWj2br/photo-4-2026-06-20-01-02-48.jpg"
+      ],
+      "category": "summer",
+      "hasColors": false,
+      "sizes": [
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
     }
   ],
   "orders": [],
@@ -1785,5 +1850,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "١٩‏/٦‏/٢٠٢٦، ٥:٠١:٤٢ ص"
+  "exportedAt": "٢٠‏/٦‏/٢٠٢٦، ١:٠٣:٥٣ ص"
 }
