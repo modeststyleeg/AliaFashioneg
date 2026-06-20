@@ -110,7 +110,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(26,24,20,.96);backdrop-f
 .card{background:var(--panel);border:1px solid rgba(0,0,0,.07);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;position:relative}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .card-img-wrap{position:relative;overflow:hidden}
-.card-img-wrap img{width:100%;height:230px;object-fit:cover;transition:transform .4s}
+.card-img-wrap img{width:100%;height:320px;object-fit:cover;object-position:top center;transition:transform .4s;cursor:zoom-in}
 .card:hover .card-img-wrap img{transform:scale(1.04)}
 .card-badge{position:absolute;top:10px;right:10px;background:linear-gradient(135deg,var(--gold),#a07840);color:#fff;padding:.3rem .7rem;border-radius:999px;font-size:.78rem;font-weight:800}
 .card-body{padding:14px;flex:1;display:flex;flex-direction:column;gap:8px}
@@ -303,7 +303,7 @@ tr:hover td{background:#faf8f5}
 
 /* ---- Image Lightbox ---- */
 #imgLightbox{
-  display:none;position:fixed;inset:0;z-index:200;
+  display:none;position:fixed;inset:0;z-index:300;
   background:rgba(0,0,0,.95);
   align-items:center;justify-content:center;cursor:zoom-out
 }
@@ -316,11 +316,13 @@ tr:hover td{background:#faf8f5}
 @keyframes zoomIn{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
 #imgLightboxClose{
   position:absolute;top:16px;right:16px;
-  width:40px;height:40px;border-radius:50%;
-  background:rgba(255,255,255,.15);border:none;
-  color:#fff;font-size:1.2rem;cursor:pointer;
-  display:grid;place-items:center
+  width:48px;height:48px;border-radius:50%;
+  background:rgba(255,255,255,.25);border:2px solid rgba(255,255,255,.4);
+  color:#fff;font-size:1.4rem;font-weight:900;cursor:pointer;
+  display:grid;place-items:center;
+  transition:.15s;z-index:201
 }
+#imgLightboxClose:hover{background:rgba(255,255,255,.4);transform:scale(1.1)}
 .card-img-wrap{position:relative;overflow:hidden}
 .quick-add-overlay{
   position:absolute;bottom:0;left:0;right:0;
@@ -423,7 +425,7 @@ footer .footer-brand{font-size:1.1rem;font-weight:900;margin-bottom:4px;color:va
 @media(max-width:600px){
   .container{width:100%;padding-inline:12px;padding-bottom:80px}
   .products{grid-template-columns:repeat(2,1fr);gap:10px}
-  .card-img-wrap img{height:175px}
+  .card-img-wrap img{height:240px}
   .card-body{padding:10px;gap:6px}
   .card h3{font-size:.9rem}
   .card-desc{font-size:.82rem}
@@ -474,7 +476,7 @@ footer .footer-brand{font-size:1.1rem;font-weight:900;margin-bottom:4px;color:va
 /* === SMALL PHONES (max 380px) === */
 @media(max-width:380px){
   .products{grid-template-columns:repeat(2,1fr);gap:7px}
-  .card-img-wrap img{height:148px}
+  .card-img-wrap img{height:200px}
   .card-body{padding:8px;gap:5px}
   .card h3{font-size:.82rem}
   .btn-main,.btn-copy{font-size:.72rem!important;padding:.42rem .2rem!important}
@@ -872,7 +874,7 @@ footer .footer-brand{font-size:1.1rem;font-weight:900;margin-bottom:4px;color:va
     <!-- Image side -->
     <div style="background:#f5f4f0;overflow-y:auto;display:flex;flex-direction:column;align-items:center;padding:16px;gap:12px">
       <div style="position:relative;width:100%">
-        <img id="productImg" src="" style="width:100%;height:auto;object-fit:contain;display:block;border-radius:12px">
+        <img id="productImg" src="" style="width:100%;height:auto;object-fit:contain;display:block;border-radius:12px;cursor:zoom-in" onclick="openLightbox(this.src)" title="اضغط لتكبير الصورة">
         <span id="prodBadge" class="card-badge" style="display:none;top:16px;right:16px;font-size:.85rem"></span>
       </div>
       <div id="productThumbs" style="display:flex;gap:8px;justify-content:center;padding:0 4px;flex-wrap:wrap"></div>
@@ -1897,7 +1899,6 @@ function openProductOptions(idx){
   (p.images||[]).forEach((src,i)=>{
     const img=el('img');img.src=src;img.className='small-thumb';if(i===0)img.classList.add('active');
     img.onclick=()=>{byId('productImg').src=src;byId('productThumbs').querySelectorAll('.small-thumb').forEach(t=>t.classList.remove('active'));img.classList.add('active');};
-    img.ondblclick=()=>openLightbox(src);
     byId('productThumbs').appendChild(img);
   });
   // no-color product
