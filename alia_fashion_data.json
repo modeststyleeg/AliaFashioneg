@@ -477,24 +477,24 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "B",
-        "P",
-        "M"
+        "اسود في ازرق",
+        "بترولي في اسود",
+        "موف في اسود"
       ],
       "colorSizes": {
-        "B": [
+        "اسود في ازرق": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "P": [
+        "بترولي في اسود": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "M": [
+        "موف في اسود": [
           "M",
           "L",
           "XL",
@@ -502,9 +502,9 @@
         ]
       },
       "colorImages": {
-        "B": "https://i.postimg.cc/qMQBkR15/photo-7-2026-06-12-04-47-26.jpg",
-        "P": "https://i.postimg.cc/Yq82p9d5/photo-8-2026-06-12-04-47-26.jpg",
-        "M": "https://i.postimg.cc/bNLYzJmg/photo-9-2026-06-12-04-47-26.jpg"
+        "اسود في ازرق": "https://i.postimg.cc/qMQBkR15/photo-7-2026-06-12-04-47-26.jpg",
+        "بترولي في اسود": "https://i.postimg.cc/Yq82p9d5/photo-8-2026-06-12-04-47-26.jpg",
+        "موف في اسود": "https://i.postimg.cc/bNLYzJmg/photo-9-2026-06-12-04-47-26.jpg"
       }
     },
     {
@@ -524,17 +524,17 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "B",
-        "G"
+        "اسود",
+        "رصاصي"
       ],
       "colorSizes": {
-        "B": [
+        "اسود": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "G": [
+        "رصاصي": [
           "M",
           "L",
           "XL",
@@ -542,8 +542,8 @@
         ]
       },
       "colorImages": {
-        "B": "https://i.postimg.cc/MTyxgKcr/photo-36-2026-06-12-05-00-55.jpg",
-        "G": "https://i.postimg.cc/wvhHnTtf/photo-38-2026-06-12-05-00-55.jpg"
+        "اسود": "https://i.postimg.cc/MTyxgKcr/photo-36-2026-06-12-05-00-55.jpg",
+        "رصاصي": "https://i.postimg.cc/wvhHnTtf/photo-38-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -562,18 +562,19 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "B",
-        "Z",
-        "N"
+        "بني",
+        "زيتي",
+        "بيج"
       ],
       "colorSizes": {
-        "B": [
+        "بني": [
           "M"
         ],
-        "Z": [
-          "M"
+        "زيتي": [
+          "M",
+          "XXL"
         ],
-        "N": [
+        "بيج": [
           "M",
           "L",
           "XL",
@@ -581,9 +582,9 @@
         ]
       },
       "colorImages": {
-        "B": "https://i.postimg.cc/SRkq4FCF/photo-64-2026-06-12-05-00-55.jpg",
-        "Z": "https://i.postimg.cc/x8nYQDH7/photo-65-2026-06-12-05-00-55.jpg",
-        "N": "https://i.postimg.cc/MHwbxgYG/image.png"
+        "بني": "https://i.postimg.cc/SRkq4FCF/photo-64-2026-06-12-05-00-55.jpg",
+        "زيتي": "https://i.postimg.cc/x8nYQDH7/photo-65-2026-06-12-05-00-55.jpg",
+        "بيج": "https://i.postimg.cc/MHwbxgYG/image.png"
       }
     },
     {
@@ -603,17 +604,17 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "N",
-        "G"
+        "رصاصي",
+        "نبيتي"
       ],
       "colorSizes": {
-        "N": [
+        "رصاصي": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "G": [
+        "نبيتي": [
           "M",
           "L",
           "XL",
@@ -621,8 +622,8 @@
         ]
       },
       "colorImages": {
-        "N": "https://i.postimg.cc/3NY7h5mr/photo-55-2026-06-12-05-00-55.jpg",
-        "G": "https://i.postimg.cc/KjxFbSB2/photo-57-2026-06-12-05-00-55.jpg"
+        "رصاصي": "https://i.postimg.cc/3NY7h5mr/photo-55-2026-06-12-05-00-55.jpg",
+        "نبيتي": "https://i.postimg.cc/KjxFbSB2/photo-57-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -661,28 +662,28 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "B",
-        "G",
-        "H",
-        "F"
+        "اسود",
+        "بترولي",
+        "بشره",
+        "رصاصي"
       ],
       "colorSizes": {
-        "B": [
+        "اسود": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "G": [
+        "بترولي": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "H": [
+        "بشره": [
           "L"
         ],
-        "F": [
+        "رصاصي": [
           "M",
           "L",
           "XL",
@@ -690,10 +691,10 @@
         ]
       },
       "colorImages": {
-        "B": "https://i.postimg.cc/8cxSQkJW/photo-2026-06-13-02-19-06.jpg",
-        "G": "https://i.postimg.cc/d18vgt7B/photo-42-2026-06-12-05-00-55.jpg",
-        "H": "https://i.postimg.cc/j5zKBdWZ/photo-41-2026-06-12-05-00-55.jpg",
-        "F": "https://i.postimg.cc/pTDx3X9s/photo-40-2026-06-12-05-00-55.jpg"
+        "اسود": "https://i.postimg.cc/8cxSQkJW/photo-2026-06-13-02-19-06.jpg",
+        "بترولي": "https://i.postimg.cc/d18vgt7B/photo-42-2026-06-12-05-00-55.jpg",
+        "بشره": "https://i.postimg.cc/j5zKBdWZ/photo-41-2026-06-12-05-00-55.jpg",
+        "رصاصي": "https://i.postimg.cc/pTDx3X9s/photo-40-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -713,36 +714,36 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "G",
-        "B",
-        "P",
-        "K"
+        "اخضر",
+        "بني",
+        "كحلي غامق",
+        "بترولي"
       ],
       "colorSizes": {
-        "G": [
+        "اخضر": [
           "M"
         ],
-        "B": [
+        "بني": [
           "M",
           "L",
           "XL"
         ],
-        "P": [
+        "كحلي غامق": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "K": [
+        "بترولي": [
           "M",
           "XXL"
         ]
       },
       "colorImages": {
-        "G": "https://i.postimg.cc/J0Mm8VZy/photo-23-2026-06-12-05-00-55.jpg",
-        "B": "https://i.postimg.cc/mkj42Xy7/photo-62-2026-06-12-05-00-55.jpg",
-        "P": "https://i.postimg.cc/kGsCX1vx/photo-61-2026-06-12-05-00-55.jpg",
-        "K": "https://i.postimg.cc/d3YVHL7W/image.png"
+        "اخضر": "https://i.postimg.cc/J0Mm8VZy/photo-23-2026-06-12-05-00-55.jpg",
+        "بني": "https://i.postimg.cc/mkj42Xy7/photo-62-2026-06-12-05-00-55.jpg",
+        "كحلي غامق": "https://i.postimg.cc/kGsCX1vx/photo-61-2026-06-12-05-00-55.jpg",
+        "بترولي": "https://i.postimg.cc/d3YVHL7W/image.png"
       }
     },
     {
@@ -760,7 +761,8 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
-        "M"
+        "M",
+        "L"
       ],
       "colors": [],
       "colorSizes": {},
@@ -805,36 +807,36 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "N",
-        "H",
-        "J",
-        "Y",
-        "C"
+        "نبيتي",
+        "بني",
+        "اسود",
+        "زيتي",
+        "كحلي"
       ],
       "colorSizes": {
-        "N": [
+        "نبيتي": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "H": [
+        "بني": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "J": [
+        "اسود": [
           "L",
           "XL"
         ],
-        "Y": [
+        "زيتي": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "C": [
+        "كحلي": [
           "M",
           "L",
           "XL",
@@ -842,11 +844,11 @@
         ]
       },
       "colorImages": {
-        "N": "https://i.postimg.cc/gcVkT48P/photo-98-2026-06-12-05-00-55.jpg",
-        "H": "https://i.postimg.cc/9XdFn1Z4/photo-95-2026-06-12-05-00-55.jpg",
-        "J": "https://i.postimg.cc/BZTQVNH3/photo-96-2026-06-12-05-00-55.jpg",
-        "Y": "https://i.postimg.cc/9XdFn1ZF/photo-94-2026-06-12-05-00-55.jpg",
-        "C": "https://i.postimg.cc/0yTRdhKH/image.png"
+        "نبيتي": "https://i.postimg.cc/gcVkT48P/photo-98-2026-06-12-05-00-55.jpg",
+        "بني": "https://i.postimg.cc/9XdFn1Z4/photo-95-2026-06-12-05-00-55.jpg",
+        "اسود": "https://i.postimg.cc/BZTQVNH3/photo-96-2026-06-12-05-00-55.jpg",
+        "زيتي": "https://i.postimg.cc/9XdFn1ZF/photo-94-2026-06-12-05-00-55.jpg",
+        "كحلي": "https://i.postimg.cc/0yTRdhKH/image.png"
       }
     },
     {
@@ -865,22 +867,22 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "G",
-        "H",
-        "K"
+        "رصاصي",
+        "كحلي غامق",
+        "كحلي فاتح"
       ],
       "colorSizes": {
-        "G": [
+        "رصاصي": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "H": [
+        "كحلي غامق": [
           "M",
           "XXL"
         ],
-        "K": [
+        "كحلي فاتح": [
           "M",
           "L",
           "XL",
@@ -888,9 +890,9 @@
         ]
       },
       "colorImages": {
-        "G": "https://i.postimg.cc/brVF4m5g/photo-1-2026-06-13-02-42-58.jpg",
-        "H": "https://i.postimg.cc/Y0DyTdP3/photo-2-2026-06-13-02-42-58.jpg",
-        "K": "https://i.postimg.cc/8cXnxZYb/photo-3-2026-06-13-02-42-58.jpg"
+        "رصاصي": "https://i.postimg.cc/brVF4m5g/photo-1-2026-06-13-02-42-58.jpg",
+        "كحلي غامق": "https://i.postimg.cc/Y0DyTdP3/photo-2-2026-06-13-02-42-58.jpg",
+        "كحلي فاتح": "https://i.postimg.cc/8cXnxZYb/photo-3-2026-06-13-02-42-58.jpg"
       }
     },
     {
@@ -951,6 +953,7 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
+        "M",
         "L",
         "XL",
         "XXL"
@@ -973,34 +976,36 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "U",
-        "T",
-        "H",
-        "C"
+        "اسود",
+        "بني",
+        "اخضر غامق",
+        "اخضر فاتح"
       ],
       "colorSizes": {
-        "U": [
+        "اسود": [
           "M"
         ],
-        "T": [
+        "بني": [
           "M",
           "L",
           "XL"
         ],
-        "H": [
+        "اخضر غامق": [
+          "L",
           "XL"
         ],
-        "C": [
+        "اخضر فاتح": [
+          "M",
           "L",
           "XL",
           "XXL"
         ]
       },
       "colorImages": {
-        "U": "https://i.postimg.cc/zvBXf5hd/photo-1-2026-06-13-16-45-33.jpg",
-        "T": "https://i.postimg.cc/3Jnv5PnT/photo-2026-06-13-02-53-29.jpg",
-        "H": "https://i.postimg.cc/GhqywZqR/photo-2026-06-13-02-53-37.jpg",
-        "C": "https://i.postimg.cc/RVXH5jGk/photo-2026-06-13-02-53-43.jpg"
+        "اسود": "https://i.postimg.cc/zvBXf5hd/photo-1-2026-06-13-16-45-33.jpg",
+        "بني": "https://i.postimg.cc/3Jnv5PnT/photo-2026-06-13-02-53-29.jpg",
+        "اخضر غامق": "https://i.postimg.cc/GhqywZqR/photo-2026-06-13-02-53-37.jpg",
+        "اخضر فاتح": "https://i.postimg.cc/RVXH5jGk/photo-2026-06-13-02-53-43.jpg"
       }
     },
     {
@@ -1019,21 +1024,21 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "N",
-        "L",
-        "P"
+        "رصاصي",
+        "كحلي غامق",
+        "كحلي فاتح"
       ],
       "colorSizes": {
-        "N": [
+        "رصاصي": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "L": [
+        "كحلي غامق": [
           "M"
         ],
-        "P": [
+        "كحلي فاتح": [
           "M",
           "L",
           "XL",
@@ -1041,9 +1046,9 @@
         ]
       },
       "colorImages": {
-        "N": "https://i.postimg.cc/KY3mr5xf/photo-75-2026-06-12-05-00-55.jpg",
-        "L": "https://i.postimg.cc/2SKzZtRM/photo-76-2026-06-12-05-00-55.jpg",
-        "P": "https://i.postimg.cc/ht5SdYW5/photo-77-2026-06-12-05-00-55.jpg"
+        "رصاصي": "https://i.postimg.cc/KY3mr5xf/photo-75-2026-06-12-05-00-55.jpg",
+        "كحلي غامق": "https://i.postimg.cc/2SKzZtRM/photo-76-2026-06-12-05-00-55.jpg",
+        "كحلي فاتح": "https://i.postimg.cc/ht5SdYW5/photo-77-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -1190,7 +1195,8 @@
       "sizes": [
         "M",
         "L",
-        "XL"
+        "XL",
+        "XXL"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1212,26 +1218,25 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "S",
-        "O",
-        "W"
+        "رصاصي",
+        "برتقاني طوبي",
+        "موف"
       ],
       "colorSizes": {
-        "S": [
+        "رصاصي": [
           "M"
         ],
-        "O": [
-          "M",
-          "XL"
+        "برتقاني طوبي": [
+          "M"
         ],
-        "W": [
+        "موف": [
           "M"
         ]
       },
       "colorImages": {
-        "S": "https://i.postimg.cc/7PnwVh8p/photo-13-2026-06-12-05-00-55.jpg",
-        "O": "https://i.postimg.cc/xj3nR8Vr/photo-12-2026-06-12-05-00-55.jpg",
-        "W": "https://i.postimg.cc/y6ysPxC4/photo-11-2026-06-12-05-00-55.jpg"
+        "رصاصي": "https://i.postimg.cc/7PnwVh8p/photo-13-2026-06-12-05-00-55.jpg",
+        "برتقاني طوبي": "https://i.postimg.cc/xj3nR8Vr/photo-12-2026-06-12-05-00-55.jpg",
+        "موف": "https://i.postimg.cc/y6ysPxC4/photo-11-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -1250,29 +1255,30 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "F",
-        "A",
-        "Q"
+        "نبيتي في اسود",
+        "بني في بيج",
+        "سماوي في ابيض"
       ],
       "colorSizes": {
-        "F": [
+        "نبيتي في اسود": [
           "M",
           "L",
           "XXL"
         ],
-        "A": [
+        "بني في بيج": [
           "M",
           "L",
           "XXL"
         ],
-        "Q": [
+        "سماوي في ابيض": [
+          "M",
           "XXL"
         ]
       },
       "colorImages": {
-        "F": "https://i.postimg.cc/wM2zTfQV/photo-15-2026-06-12-05-00-55.jpg",
-        "A": "https://i.postimg.cc/Wz8VbWw7/photo-16-2026-06-12-05-00-55.jpg",
-        "Q": "https://i.postimg.cc/gjspkSH4/photo-14-2026-06-12-05-00-55.jpg"
+        "نبيتي في اسود": "https://i.postimg.cc/wM2zTfQV/photo-15-2026-06-12-05-00-55.jpg",
+        "بني في بيج": "https://i.postimg.cc/Wz8VbWw7/photo-16-2026-06-12-05-00-55.jpg",
+        "سماوي في ابيض": "https://i.postimg.cc/gjspkSH4/photo-14-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -1313,21 +1319,21 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "F",
-        "A",
-        "I"
+        "ازرق",
+        "كحلي",
+        "زيتي"
       ],
       "colorSizes": {
-        "F": [
+        "ازرق": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "A": [
+        "كحلي": [
           "M"
         ],
-        "I": [
+        "زيتي": [
           "M",
           "L",
           "XL",
@@ -1335,9 +1341,9 @@
         ]
       },
       "colorImages": {
-        "F": "https://i.postimg.cc/90b2F8YW/photo-60-2026-06-12-05-00-55.jpg",
-        "A": "https://i.postimg.cc/J0x84654/photo-21-2026-06-12-05-00-55.jpg",
-        "I": "https://i.postimg.cc/kGsCX1vg/photo-59-2026-06-12-05-00-55.jpg"
+        "ازرق": "https://i.postimg.cc/90b2F8YW/photo-60-2026-06-12-05-00-55.jpg",
+        "كحلي": "https://i.postimg.cc/J0x84654/photo-21-2026-06-12-05-00-55.jpg",
+        "زيتي": "https://i.postimg.cc/kGsCX1vg/photo-59-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -1356,24 +1362,24 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "A",
-        "Q",
-        "P"
+        "اخضر",
+        "بيج",
+        "بينك"
       ],
       "colorSizes": {
-        "A": [
+        "اخضر": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "Q": [
+        "بيج": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "P": [
+        "بينك": [
           "M",
           "L",
           "XL",
@@ -1381,9 +1387,9 @@
         ]
       },
       "colorImages": {
-        "A": "https://i.postimg.cc/X7xNVJsc/photo-86-2026-06-12-05-00-55.jpg",
-        "Q": "https://i.postimg.cc/m2VZbDmQ/photo-87-2026-06-12-05-00-55.jpg",
-        "P": "https://i.postimg.cc/59hXcLhD/photo-85-2026-06-12-05-00-55.jpg"
+        "اخضر": "https://i.postimg.cc/X7xNVJsc/photo-86-2026-06-12-05-00-55.jpg",
+        "بيج": "https://i.postimg.cc/m2VZbDmQ/photo-87-2026-06-12-05-00-55.jpg",
+        "بينك": "https://i.postimg.cc/59hXcLhD/photo-85-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -1487,24 +1493,24 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "I",
-        "U",
-        "T"
+        "ازرق",
+        "اخضر",
+        "اسود"
       ],
       "colorSizes": {
-        "I": [
+        "ازرق": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "U": [
+        "اخضر": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "T": [
+        "اسود": [
           "M",
           "L",
           "XL",
@@ -1512,9 +1518,9 @@
         ]
       },
       "colorImages": {
-        "I": "https://i.postimg.cc/xTgj0C6W/photo-30-2026-06-12-05-03-08.jpg",
-        "U": "https://i.postimg.cc/ncTVHzdx/photo-29-2026-06-12-05-03-08.jpg",
-        "T": "https://i.postimg.cc/VL4sY67y/photo-31-2026-06-12-05-03-08.jpg"
+        "ازرق": "https://i.postimg.cc/xTgj0C6W/photo-30-2026-06-12-05-03-08.jpg",
+        "اخضر": "https://i.postimg.cc/ncTVHzdx/photo-29-2026-06-12-05-03-08.jpg",
+        "اسود": "https://i.postimg.cc/VL4sY67y/photo-31-2026-06-12-05-03-08.jpg"
       }
     },
     {
@@ -1531,14 +1537,15 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "O",
-        "A"
+        "اسود",
+        "بيج"
       ],
       "colorSizes": {
-        "O": [
+        "اسود": [
+          "M",
           "XL"
         ],
-        "A": [
+        "بيج": [
           "M",
           "L",
           "XL",
@@ -1546,8 +1553,8 @@
         ]
       },
       "colorImages": {
-        "O": "https://i.postimg.cc/vHGHF9tL/photo-33-2026-06-12-05-03-08.jpg",
-        "A": "https://i.postimg.cc/65B5JRfV/photo-34-2026-06-12-05-03-08.jpg"
+        "اسود": "https://i.postimg.cc/vHGHF9tL/photo-33-2026-06-12-05-03-08.jpg",
+        "بيج": "https://i.postimg.cc/65B5JRfV/photo-34-2026-06-12-05-03-08.jpg"
       }
     },
     {
@@ -1564,15 +1571,15 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "Q",
-        "F"
+        "اسود",
+        "زيتي"
       ],
       "colorSizes": {
-        "Q": [
+        "اسود": [
           "M",
           "XXL"
         ],
-        "F": [
+        "زيتي": [
           "M",
           "L",
           "XL",
@@ -1580,8 +1587,8 @@
         ]
       },
       "colorImages": {
-        "Q": "https://i.postimg.cc/3w03CZ3R/photo-13-2026-06-12-05-03-08.jpg",
-        "F": "https://i.postimg.cc/7LJqMNqx/photo-16-2026-06-12-05-03-08.jpg"
+        "اسود": "https://i.postimg.cc/3w03CZ3R/photo-13-2026-06-12-05-03-08.jpg",
+        "زيتي": "https://i.postimg.cc/7LJqMNqx/photo-16-2026-06-12-05-03-08.jpg"
       }
     },
     {
@@ -1617,6 +1624,7 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
+        "L",
         "XL",
         "5XL"
       ],
@@ -1721,6 +1729,7 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
+        "XL",
         "4XL"
       ],
       "colors": [],
@@ -1741,26 +1750,24 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "ا",
-        "I",
-        "I"
+        "رويال",
+        "روزالين"
       ],
       "colorSizes": {
-        "ا": [
+        "رويال": [
           "M",
           "L",
           "XL"
         ],
-        "I": [
+        "روزالين": [
           "M",
           "L",
-          "XL",
-          "XXL"
+          "XL"
         ]
       },
       "colorImages": {
-        "ا": "https://i.postimg.cc/7YqWDw0d/photo-1-2026-06-16-23-34-10.jpg",
-        "I": "https://i.postimg.cc/WpGHQhFx/photo-3-2026-06-16-23-34-10.jpg"
+        "رويال": "https://i.postimg.cc/7YqWDw0d/photo-1-2026-06-16-23-34-10.jpg",
+        "روزالين": "https://i.postimg.cc/WpGHQhFx/photo-3-2026-06-16-23-34-10.jpg"
       }
     },
     {
@@ -1777,24 +1784,24 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "m",
-        "I",
-        "L"
+        "اسود",
+        "ابيض",
+        "بني"
       ],
       "colorSizes": {
-        "m": [
+        "اسود": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "I": [
+        "ابيض": [
           "M",
           "L",
           "XL",
           "XXL"
         ],
-        "L": [
+        "بني": [
           "M",
           "L",
           "XL",
@@ -1802,9 +1809,9 @@
         ]
       },
       "colorImages": {
-        "m": "https://i.postimg.cc/KjcLwdyz/photo-1-2026-06-20-00-59-12.jpg",
-        "I": "https://i.postimg.cc/mkZMJ0Gr/photo-2-2026-06-20-00-59-12.jpg",
-        "L": "https://i.postimg.cc/WzprCQPb/photo-3-2026-06-20-00-59-12.jpg"
+        "اسود": "https://i.postimg.cc/KjcLwdyz/photo-1-2026-06-20-00-59-12.jpg",
+        "ابيض": "https://i.postimg.cc/mkZMJ0Gr/photo-2-2026-06-20-00-59-12.jpg",
+        "بني": "https://i.postimg.cc/WzprCQPb/photo-3-2026-06-20-00-59-12.jpg"
       }
     },
     {
@@ -1827,6 +1834,103 @@
       "colors": [],
       "colorSizes": {},
       "colorImages": {}
+    },
+    {
+      "id": 1782093876140,
+      "code": "318",
+      "name": "عبايه جبردين هامر",
+      "desc": "الخامه جبردين هامر",
+      "price": 550,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/J0SGfmJT/photo-1-2026-06-22-05-00-59.jpg، https://i.postimg.cc/90sr6VTL/photo-2-2026-06-22-05-00-59.jpg، https://i.postimg.cc/nrNCyZ7T/photo-3-2026-06-22-05-00-59.jpg"
+      ],
+      "category": "summer",
+      "hasColors": false,
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
+    },
+    {
+      "id": 1782146425356,
+      "code": "406",
+      "name": "دريس جينز",
+      "desc": "دريس جينز والكم رويال",
+      "price": 1200,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/tRtSZSC7/photo-1-2026-06-22-15-02-42.jpg، https://i.postimg.cc/pVYGhGXT/photo-2-2026-06-22-15-02-42.jpg، https://i.postimg.cc/VsBGrGsx/photo-3-2026-06-22-15-02-42.jpg"
+      ],
+      "category": "summer",
+      "hasColors": false,
+      "sizes": [
+        "M"
+      ],
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
+    },
+    {
+      "id": 1782146542291,
+      "code": "206",
+      "name": "عبايه كريب تطريز",
+      "desc": "الخامه كريب مع تطريز",
+      "price": 750,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/Z5GzcdJW/photo-1-2026-06-22-19-41-15.jpg، https://i.postimg.cc/fRGQK9M3/photo-2-2026-06-22-19-41-15.jpg، https://i.postimg.cc/Qd9r1bZg/photo-3-2026-06-22-19-41-15.jpg"
+      ],
+      "category": "summer",
+      "hasColors": false,
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
+    },
+    {
+      "id": 1782146814874,
+      "code": "143",
+      "name": "سوت قطعتين",
+      "desc": "سوت قطعتين الخامة كتان",
+      "price": 900,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/JnTTpfbG/photo-1-2026-06-22-19-44-07.jpg، https://i.postimg.cc/ZRffwGr9/photo-2-2026-06-22-19-44-07.jpg، https://i.postimg.cc/bJ66m7QZ/photo-3-2026-06-22-19-44-07.jpg، https://i.postimg.cc/qRmm1P8T/photo-4-2026-06-22-19-44-07.jpg"
+      ],
+      "category": "summer",
+      "hasColors": true,
+      "sizes": [],
+      "colors": [
+        "اخضر",
+        "اسود"
+      ],
+      "colorSizes": {
+        "اخضر": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "اسود": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "colorImages": {
+        "اخضر": "https://i.postimg.cc/JnTTpfbG/photo-1-2026-06-22-19-44-07.jpg",
+        "اسود": "https://i.postimg.cc/bJ66m7QZ/photo-3-2026-06-22-19-44-07.jpg"
+      }
     }
   ],
   "orders": [],
@@ -1850,5 +1954,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "٢٠‏/٦‏/٢٠٢٦، ٥:١٠:٢٤ م"
+  "exportedAt": "٢٢‏/٦‏/٢٠٢٦، ٨:٠٣:١٢ م"
 }
