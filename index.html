@@ -882,7 +882,10 @@ src="https://www.facebook.com/tr?id=3098759040331414&ev=PageView&noscript=1"
       <div id="productCode" style="font-size:.78rem;color:var(--muted);font-weight:700;letter-spacing:.08em"></div>
       <div id="productTitle" style="font-size:1.1rem;font-weight:900;margin-top:2px"></div>
     </div>
-    <button class="btn ghost" id="closeProductOptions">✕ إغلاق</button>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="btn ghost" id="copyProductLink" title="نسخ لينك المنتج">🔗 نسخ اللينك</button>
+      <button class="btn ghost" id="closeProductOptions">✕ إغلاق</button>
+    </div>
   </div>
 
   <!-- Body -->
@@ -1763,34 +1766,8 @@ function closeThankYou(){
 // ===== Hero Media (image or video) =====
 function updateHeroMedia(){
   const wrap=byId('heroMediaWrap');
-  const video=settings.heroVideo||'';
   const img=settings.heroImg||'';
-  if(video){
-    // YouTube Shorts
-    const ytShortsMatch=video.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/);
-    if(ytShortsMatch){
-      wrap.innerHTML=`<iframe src="https://www.youtube.com/embed/${ytShortsMatch[1]}?autoplay=1&mute=1&loop=1&playlist=${ytShortsMatch[1]}&controls=0&showinfo=0&rel=0" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
-      return;
-    }
-    // YouTube normal
-    const ytMatch=video.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-    if(ytMatch){
-      wrap.innerHTML=`<iframe src="https://www.youtube.com/embed/${ytMatch[1]}?autoplay=1&mute=1&loop=1&playlist=${ytMatch[1]}&controls=0&showinfo=0&rel=0" allow="autoplay;encrypted-media" allowfullscreen></iframe>`;
-      return;
-    }
-    // Google Drive
-    const driveMatch=video.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
-    if(driveMatch){
-      wrap.innerHTML=`<iframe src="https://drive.google.com/file/d/${driveMatch[1]}/preview?autoplay=1&loop=1" allow="autoplay" allowfullscreen style="pointer-events:none"></iframe>`;
-      return;
-    }
-    // Direct MP4
-    if(video.match(/\.(mp4|webm|ogg)(\?.*)?$/i)){
-      wrap.innerHTML=`<video src="${video}" autoplay muted loop playsinline></video>`;
-      return;
-    }
-  }
-  // fallback to image
+  // تم إلغاء فيديو الهيرو بناءً على طلبك — يظهر الآن صورة فقط دايمًا
   wrap.innerHTML=`<img id="heroImg" src="${img||'https://images.unsplash.com/photo-1542060748-10c28b62716b?q=80&w=1400&auto=format&fit=crop'}" alt="موديل عبايات">`;
 }
 
@@ -1928,9 +1905,48 @@ function openProductOptions(idx){
   byId('productFullDesc').textContent=p.desc||'';
   updateModalSubtotal();
   byId('productOptionsModal').classList.add('open');
+  updateProductUrl(p.id);
 }
 
-byId('closeProductOptions').onclick=()=>byId('productOptionsModal').classList.remove('open');
+// ===== لينك مخصص لكل منتج =====
+function updateProductUrl(id){
+  const url=new URL(window.location.href);
+  url.searchParams.set('product', id);
+  history.pushState({product:id}, '', url.toString());
+}
+function clearProductUrl(){
+  const url=new URL(window.location.href);
+  url.searchParams.delete('product');
+  history.pushState({}, '', url.toString());
+}
+function copyProductLink(){
+  if(currentProductIndex===null) return;
+  const p=products[currentProductIndex];
+  const url=new URL(window.location.href);
+  url.searchParams.set('product', p.id);
+  const link=url.toString();
+  const done=()=>alert('✅ تم نسخ لينك المنتج');
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(link).then(done).catch(()=>fallbackCopy(link,done));
+  } else {
+    fallbackCopy(link,done);
+  }
+}
+function fallbackCopy(text,cb){
+  const ta=document.createElement('textarea');
+  ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');}catch(e){}
+  document.body.removeChild(ta);
+  if(cb) cb();
+}
+byId('copyProductLink').onclick=copyProductLink;
+window.addEventListener('popstate',()=>{
+  const params=new URLSearchParams(window.location.search);
+  if(!params.get('product')) byId('productOptionsModal').classList.remove('open');
+});
+
+byId('closeProductOptions').onclick=()=>{byId('productOptionsModal').classList.remove('open');clearProductUrl();};
 // closeProductOptions2 removed
 byId('confirmProductOptions').onclick=()=>{
   if(currentProductIndex===null) return;
