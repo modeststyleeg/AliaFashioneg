@@ -647,7 +647,7 @@ src="https://www.facebook.com/tr?id=3098759040331414&ev=PageView&noscript=1"
       <div class="co-field"><span class="co-label">المدينة</span><input type="text" id="checkoutCity" placeholder="المدينة" class="co-input"></div>
       <div class="co-field"><span class="co-label">المحافظة</span>
         <select id="checkoutProvince" class="co-input" style="appearance:auto">
-          <option value="الشرقية" data-fee="55">الشرقية</option>
+          <option value="الشرقية" data-fee="60">الشرقية</option>
           <option value="الدقهلية" data-fee="95">الدقهلية</option>
           <option value="القاهرة" data-fee="95">القاهرة</option>
           <option value="الجيزة" data-fee="95">الجيزة</option>
@@ -882,10 +882,7 @@ src="https://www.facebook.com/tr?id=3098759040331414&ev=PageView&noscript=1"
       <div id="productCode" style="font-size:.78rem;color:var(--muted);font-weight:700;letter-spacing:.08em"></div>
       <div id="productTitle" style="font-size:1.1rem;font-weight:900;margin-top:2px"></div>
     </div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <button class="btn ghost" id="copyProductLink" title="نسخ لينك المنتج">🔗 نسخ اللينك</button>
-      <button class="btn ghost" id="closeProductOptions">✕ إغلاق</button>
-    </div>
+    <button class="btn ghost" id="closeProductOptions">✕ إغلاق</button>
   </div>
 
   <!-- Body -->
@@ -1919,28 +1916,6 @@ function clearProductUrl(){
   url.searchParams.delete('product');
   history.pushState({}, '', url.toString());
 }
-function copyProductLink(){
-  if(currentProductIndex===null) return;
-  const p=products[currentProductIndex];
-  const url=new URL(window.location.href);
-  url.searchParams.set('product', p.id);
-  const link=url.toString();
-  const done=()=>alert('✅ تم نسخ لينك المنتج');
-  if(navigator.clipboard&&navigator.clipboard.writeText){
-    navigator.clipboard.writeText(link).then(done).catch(()=>fallbackCopy(link,done));
-  } else {
-    fallbackCopy(link,done);
-  }
-}
-function fallbackCopy(text,cb){
-  const ta=document.createElement('textarea');
-  ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
-  document.body.appendChild(ta);ta.select();
-  try{document.execCommand('copy');}catch(e){}
-  document.body.removeChild(ta);
-  if(cb) cb();
-}
-byId('copyProductLink').onclick=copyProductLink;
 window.addEventListener('popstate',()=>{
   const params=new URLSearchParams(window.location.search);
   if(!params.get('product')) byId('productOptionsModal').classList.remove('open');
