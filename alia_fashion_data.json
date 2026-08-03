@@ -448,7 +448,6 @@
         "اسود": [
           "M",
           "L",
-          "XL",
           "XXL"
         ]
       },
@@ -571,14 +570,12 @@
           "M"
         ],
         "زيتي": [
-          "M",
-          "XXL"
+          "M"
         ],
         "بيج": [
           "M",
           "L",
-          "XL",
-          "XXL"
+          "XL"
         ]
       },
       "colorImages": {
@@ -731,7 +728,6 @@
         "كحلي غامق": [
           "M",
           "L",
-          "XL",
           "XXL"
         ],
         "بترولي": [
@@ -822,7 +818,6 @@
         ],
         "بني": [
           "M",
-          "L",
           "XL",
           "XXL"
         ],
@@ -875,7 +870,6 @@
         "رصاصي": [
           "M",
           "L",
-          "XL",
           "XXL"
         ],
         "كحلي غامق": [
@@ -939,30 +933,6 @@
       "colorImages": {}
     },
     {
-      "id": 28,
-      "code": "5260",
-      "name": "دريس جينز خفيف ريون فوم مشجر",
-      "desc": "🔹 الخامة: جينز والكم كتان",
-      "price": 1200,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/0yB8w4R4/photo-78-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/ht5SdYW1/photo-79-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/rwP8rHXQ/photo-80-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
       "id": 29,
       "code": "114",
       "name": "عبايه كتان",
@@ -991,13 +961,11 @@
           "XL"
         ],
         "اخضر غامق": [
-          "L",
-          "XL"
+          "L"
         ],
         "اخضر فاتح": [
           "M",
           "L",
-          "XL",
           "XXL"
         ]
       },
@@ -1219,8 +1187,7 @@
       "sizes": [],
       "colors": [
         "رصاصي",
-        "برتقاني طوبي",
-        "موف"
+        "برتقاني طوبي"
       ],
       "colorSizes": {
         "رصاصي": [
@@ -1228,15 +1195,11 @@
         ],
         "برتقاني طوبي": [
           "M"
-        ],
-        "موف": [
-          "M"
         ]
       },
       "colorImages": {
         "رصاصي": "https://i.postimg.cc/7PnwVh8p/photo-13-2026-06-12-05-00-55.jpg",
-        "برتقاني طوبي": "https://i.postimg.cc/xj3nR8Vr/photo-12-2026-06-12-05-00-55.jpg",
-        "موف": "https://i.postimg.cc/y6ysPxC4/photo-11-2026-06-12-05-00-55.jpg"
+        "برتقاني طوبي": "https://i.postimg.cc/xj3nR8Vr/photo-12-2026-06-12-05-00-55.jpg"
       }
     },
     {
@@ -1267,12 +1230,10 @@
         ],
         "بني في بيج": [
           "M",
-          "L",
-          "XXL"
+          "L"
         ],
         "سماوي في ابيض": [
-          "M",
-          "XXL"
+          "M"
         ]
       },
       "colorImages": {
@@ -1320,7 +1281,6 @@
       "sizes": [],
       "colors": [
         "ازرق",
-        "كحلي",
         "زيتي"
       ],
       "colorSizes": {
@@ -1329,9 +1289,6 @@
           "L",
           "XL",
           "XXL"
-        ],
-        "كحلي": [
-          "M"
         ],
         "زيتي": [
           "M",
@@ -1342,7 +1299,6 @@
       },
       "colorImages": {
         "ازرق": "https://i.postimg.cc/90b2F8YW/photo-60-2026-06-12-05-00-55.jpg",
-        "كحلي": "https://i.postimg.cc/J0x84654/photo-21-2026-06-12-05-00-55.jpg",
         "زيتي": "https://i.postimg.cc/kGsCX1vg/photo-59-2026-06-12-05-00-55.jpg"
       }
     },
@@ -1407,9 +1363,7 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
-        "M",
-        "L",
-        "XXL"
+        "XL"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1576,14 +1530,11 @@
       ],
       "colorSizes": {
         "اسود": [
-          "M",
-          "XXL"
+          "M"
         ],
         "زيتي": [
-          "M",
           "L",
-          "XL",
-          "XXL"
+          "XL"
         ]
       },
       "colorImages": {
@@ -1698,45 +1649,6 @@
       "colorImages": {}
     },
     {
-      "id": 55,
-      "code": "118",
-      "name": "دريس قطعتين",
-      "desc": "دريس قطعتين \nالخامه الدريس كت كريب\nالبوليرو سى واى",
-      "price": 900,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/nrpZxbBM/photo-4-2026-06-12-05-03-08.jpg، https://i.postimg.cc/L52RSKLs/photo-5-2026-06-12-05-03-08.jpg، https://i.postimg.cc/sxsyzd7x/photo-6-2026-06-12-05-03-08.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "L"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
-      "id": 1781641986527,
-      "code": "5266",
-      "name": "سوت 3 قطع ووتر بروف",
-      "desc": "الخامة ووتر بروف — 3 قطع توب + بنطلون + بندانة",
-      "price": 900,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/hG3BQhbm/photo-1-2026-06-16-23-32-17.jpg، https://i.postimg.cc/5tkVQjqC/photo-2-2026-06-16-23-32-17.jpg، https://i.postimg.cc/Bvw0Ptcj/photo-3-2026-06-16-23-32-17.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "XL",
-        "4XL"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
       "id": 1781642171188,
       "code": "بيزك",
       "name": "بيزك رويال",
@@ -1790,22 +1702,16 @@
       ],
       "colorSizes": {
         "اسود": [
-          "M",
-          "L",
-          "XL",
-          "XXL"
+          "L"
         ],
         "ابيض": [
           "M",
           "L",
-          "XL",
           "XXL"
         ],
         "بني": [
-          "M",
           "L",
-          "XL",
-          "XXL"
+          "XL"
         ]
       },
       "colorImages": {
@@ -1827,8 +1733,6 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
-        "L",
-        "XL",
         "XXL"
       ],
       "colors": [],
@@ -1848,8 +1752,7 @@
       "category": "summer",
       "hasColors": false,
       "sizes": [
-        "M",
-        "L"
+        "M"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1954,5 +1857,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "٢٢‏/٦‏/٢٠٢٦، ٨:٠٣:١٢ م"
+  "exportedAt": "٣‏/٨‏/٢٠٢٦، ٨:٣٧:١٢ ص"
 }
