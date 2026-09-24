@@ -265,15 +265,15 @@
       "code": "126",
       "name": "شميز محجبات",
       "desc": "الخامة سي واي",
-      "price": 500,
-      "price_old": null,
+      "price": 420,
+      "price_old": 520,
       "images": [
-        "https://i.postimg.cc/XNf7zxFR/photo-1-2026-06-12-04-47-25.jpg",
-        "https://i.postimg.cc/h4LP5MxY/photo-2-2026-06-12-04-47-25.jpg",
-        "https://i.postimg.cc/L4t6bvf7/photo-3-2026-06-12-04-47-25.jpg",
-        "https://i.postimg.cc/qBsM5Qn5/photo-4-2026-06-12-04-47-26.jpg",
-        "https://i.postimg.cc/L4t6bvf0/photo-5-2026-06-12-04-47-26.jpg",
-        "https://i.postimg.cc/XqkjB74w/photo-6-2026-06-12-04-47-26.jpg"
+        "https://i.postimg.cc/d1NZRqgv/photo-1-2026-09-24-22-02-15.jpg",
+        "https://i.postimg.cc/ydp3hV2C/photo-2-2026-09-24-22-02-15.jpg",
+        "https://i.postimg.cc/mDp13bKf/photo-3-2026-09-24-22-02-15.jpg",
+        "https://i.postimg.cc/xCpNG0hw/photo-4-2026-09-24-22-02-15.jpg",
+        "https://i.postimg.cc/4d2HvJjC/photo-5-2026-09-24-22-02-15.jpg",
+        "https://i.postimg.cc/LXQgkHwW/photo-6-2026-09-24-22-02-15.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -288,28 +288,22 @@
       ],
       "colorSizes": {
         "بني": [
-          "M",
-          "L",
-          "XL",
-          "XXL"
+          "M"
         ],
         "ازرق": [
           "M",
           "L",
-          "XL",
-          "XXL"
-        ],
-        "موف": [
-          "M",
-          "L"
-        ],
-        "زيتي": [
-          "M",
-          "L",
           "XL"
         ],
-        "فسفوري": [
+        "موف": [
           "M"
+        ],
+        "زيتي": [
+          "M"
+        ],
+        "فسفوري": [
+          "M",
+          "L"
         ],
         "اسود": [
           "M",
@@ -318,12 +312,12 @@
         ]
       },
       "colorImages": {
-        "بني": "https://i.postimg.cc/XNf7zxFR/photo-1-2026-06-12-04-47-25.jpg",
-        "ازرق": "https://i.postimg.cc/h4LP5MxY/photo-2-2026-06-12-04-47-25.jpg",
-        "موف": "https://i.postimg.cc/L4t6bvf7/photo-3-2026-06-12-04-47-25.jpg",
-        "زيتي": "https://i.postimg.cc/qBsM5Qn5/photo-4-2026-06-12-04-47-26.jpg",
-        "فسفوري": "https://i.postimg.cc/L4t6bvf0/photo-5-2026-06-12-04-47-26.jpg",
-        "اسود": "https://i.postimg.cc/XqkjB74w/photo-6-2026-06-12-04-47-26.jpg"
+        "بني": "https://i.postimg.cc/d1NZRqgv/photo-1-2026-09-24-22-02-15.jpg",
+        "ازرق": "https://i.postimg.cc/ydp3hV2C/photo-2-2026-09-24-22-02-15.jpg",
+        "موف": "https://i.postimg.cc/mDp13bKf/photo-3-2026-09-24-22-02-15.jpg",
+        "زيتي": "https://i.postimg.cc/xCpNG0hw/photo-4-2026-09-24-22-02-15.jpg",
+        "فسفوري": "https://i.postimg.cc/4d2HvJjC/photo-5-2026-09-24-22-02-15.jpg",
+        "اسود": "https://i.postimg.cc/LXQgkHwW/photo-6-2026-09-24-22-02-15.jpg"
       }
     },
     {
@@ -331,8 +325,8 @@
       "code": "122",
       "name": "عباية سي واي",
       "desc": "الخامة سي واي",
-      "price": 700,
-      "price_old": null,
+      "price": 550,
+      "price_old": 700,
       "images": [
         "https://i.postimg.cc/qMQBkR15/photo-7-2026-06-12-04-47-26.jpg",
         "https://i.postimg.cc/Yq82p9d5/photo-8-2026-06-12-04-47-26.jpg",
@@ -367,9 +361,9 @@
         ]
       },
       "colorImages": {
-        "اسود في ازرق": "https://i.postimg.cc/qMQBkR15/photo-7-2026-06-12-04-47-26.jpg",
-        "بترولي في اسود": "https://i.postimg.cc/Yq82p9d5/photo-8-2026-06-12-04-47-26.jpg",
-        "موف في اسود": "https://i.postimg.cc/bNLYzJmg/photo-9-2026-06-12-04-47-26.jpg"
+        "اسود في ازرق": "https://i.postimg.cc/KY68m1X8/photo-1-2026-09-24-22-09-22.jpg",
+        "بترولي في اسود": "https://i.postimg.cc/CK3xwRyK/photo-2-2026-09-24-22-09-22.jpg",
+        "موف في اسود": "https://i.postimg.cc/BvrnJjWq/photo-3-2026-09-24-22-09-22.jpg"
       }
     },
     {
@@ -378,12 +372,10 @@
       "name": "عباية كريب تطريز",
       "desc": "الخامة كريب مع تطريز",
       "price": 750,
-      "price_old": null,
+      "price_old": 950,
       "images": [
-        "https://i.postimg.cc/MTyxgKcr/photo-36-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/fLxZ1T3P/photo-37-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/wvhHnTtf/photo-38-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/rmSc7Fdh/photo-39-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/jSy8M9sp/photo-1-2026-09-24-22-15-58.jpg",
+        "https://i.postimg.cc/Z56fwgT1/photo-2-2026-09-24-22-15-58.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -396,8 +388,7 @@
         "اسود": [
           "M",
           "L",
-          "XL",
-          "XXL"
+          "XL"
         ],
         "رصاصي": [
           "M",
@@ -407,8 +398,8 @@
         ]
       },
       "colorImages": {
-        "اسود": "https://i.postimg.cc/MTyxgKcr/photo-36-2026-06-12-05-00-55.jpg",
-        "رصاصي": "https://i.postimg.cc/wvhHnTtf/photo-38-2026-06-12-05-00-55.jpg"
+        "اسود": "https://i.postimg.cc/jSy8M9sp/photo-1-2026-09-24-22-15-58.jpg",
+        "رصاصي": "https://i.postimg.cc/Z56fwgT1/photo-2-2026-09-24-22-15-58.jpg"
       }
     },
     {
@@ -416,12 +407,12 @@
       "code": "142",
       "name": "ترانش كوت جبردين",
       "desc": "الخامة جبردين",
-      "price": 850,
-      "price_old": null,
+      "price": 680,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/2yrmYRhN/photo-63-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/SRkq4FCF/photo-64-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/x8nYQDH7/photo-65-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/y8RGwxTX/photo-1-2026-09-24-22-13-53.jpg",
+        "https://i.postimg.cc/4xc0ry1v/photo-2-2026-09-24-22-13-53.jpg",
+        "https://i.postimg.cc/0yS4LjCS/photo-3-2026-09-24-22-13-53.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -445,9 +436,9 @@
         ]
       },
       "colorImages": {
-        "بني": "https://i.postimg.cc/SRkq4FCF/photo-64-2026-06-12-05-00-55.jpg",
-        "زيتي": "https://i.postimg.cc/x8nYQDH7/photo-65-2026-06-12-05-00-55.jpg",
-        "بيج": "https://i.postimg.cc/MHwbxgYG/image.png"
+        "بني": "https://i.postimg.cc/0yS4LjCS/photo-3-2026-09-24-22-13-53.jpg",
+        "زيتي": "https://i.postimg.cc/4xc0ry1v/photo-2-2026-09-24-22-13-53.jpg",
+        "بيج": "https://i.postimg.cc/y8RGwxTX/photo-1-2026-09-24-22-13-53.jpg"
       }
     },
     {
@@ -455,13 +446,11 @@
       "code": "132",
       "name": "عباية كريب كتان",
       "desc": "الخامة كريب في كتان",
-      "price": 700,
-      "price_old": null,
+      "price": 670,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/3NY7h5mr/photo-55-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/D0nFhkLF/photo-56-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/KjxFbSB2/photo-57-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/zv85NZK1/photo-58-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/FHx69q2R/photo-1-2026-09-24-22-19-21.jpg",
+        "https://i.postimg.cc/3xZqK6PK/photo-2-2026-09-24-22-19-21.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -472,54 +461,29 @@
       ],
       "colorSizes": {
         "رصاصي": [
-          "M",
-          "L",
-          "XL",
-          "XXL"
+          "M"
         ],
         "نبيتي": [
-          "M",
-          "L",
-          "XL",
-          "XXL"
+          "M"
         ]
       },
       "colorImages": {
-        "رصاصي": "https://i.postimg.cc/3NY7h5mr/photo-55-2026-06-12-05-00-55.jpg",
-        "نبيتي": "https://i.postimg.cc/KjxFbSB2/photo-57-2026-06-12-05-00-55.jpg"
+        "رصاصي": "https://i.postimg.cc/3xZqK6PK/photo-2-2026-09-24-22-19-21.jpg",
+        "نبيتي": "https://i.postimg.cc/FHx69q2R/photo-1-2026-09-24-22-19-21.jpg"
       }
-    },
-    {
-      "id": 19,
-      "code": "123",
-      "name": "عباية فريسكا مشجر",
-      "desc": "الخامة فريسكا مشجر",
-      "price": 800,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/prCvXGJQ/photo-17-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "L"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
     },
     {
       "id": 20,
       "code": "108",
       "name": "كاردي اوبن يوريا",
       "desc": "الخامة اوبن يوريا",
-      "price": 650,
-      "price_old": null,
+      "price": 620,
+      "price_old": 900,
       "images": [
-        "https://i.postimg.cc/pTDx3X9s/photo-40-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/j5zKBdWZ/photo-41-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/d18vgt7B/photo-42-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/8cxSQkJW/photo-2026-06-13-02-19-06.jpg"
+        "https://i.postimg.cc/N0SkYkfH/photo-1-2026-09-24-22-21-27.jpg",
+        "https://i.postimg.cc/s2q4y4DZ/photo-2-2026-09-24-22-21-27.jpg",
+        "https://i.postimg.cc/nLgGZGcj/photo-3-2026-09-24-22-21-27.jpg",
+        "https://i.postimg.cc/W4Cwjwbh/photo-4-2026-09-24-22-21-27.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -554,10 +518,10 @@
         ]
       },
       "colorImages": {
-        "اسود": "https://i.postimg.cc/8cxSQkJW/photo-2026-06-13-02-19-06.jpg",
-        "بترولي": "https://i.postimg.cc/d18vgt7B/photo-42-2026-06-12-05-00-55.jpg",
-        "بشره": "https://i.postimg.cc/j5zKBdWZ/photo-41-2026-06-12-05-00-55.jpg",
-        "رصاصي": "https://i.postimg.cc/pTDx3X9s/photo-40-2026-06-12-05-00-55.jpg"
+        "اسود": "https://i.postimg.cc/N0SkYkfH/photo-1-2026-09-24-22-21-27.jpg",
+        "بترولي": "https://i.postimg.cc/nLgGZGcj/photo-3-2026-09-24-22-21-27.jpg",
+        "بشره": "https://i.postimg.cc/W4Cwjwbh/photo-4-2026-09-24-22-21-27.jpg",
+        "رصاصي": "https://i.postimg.cc/s2q4y4DZ/photo-2-2026-09-24-22-21-27.jpg"
       }
     },
     {
@@ -565,13 +529,13 @@
       "code": "124",
       "name": "سوت 3 قطع فريسكا",
       "desc": "الخامة فريسكا ساده والبيزك كتان",
-      "price": 850,
-      "price_old": null,
+      "price": 680,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/D0nFhkLJ/photo-22-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/J0Mm8VZy/photo-23-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/kGsCX1vx/photo-61-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/mkj42Xy7/photo-62-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/DzXbQkn8/photo-1-2026-09-24-22-24-45.jpg",
+        "https://i.postimg.cc/TPDWjMfh/photo-2-2026-09-24-22-24-45.jpg",
+        "https://i.postimg.cc/xdzbGDn8/photo-3-2026-09-24-22-24-45.jpg",
+        "https://i.postimg.cc/FKLJb5NF/photo-4-2026-09-24-22-24-45.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -579,7 +543,7 @@
       "colors": [
         "اخضر",
         "بني",
-        "كحلي غامق",
+        "اسود",
         "بترولي"
       ],
       "colorSizes": {
@@ -588,59 +552,32 @@
         ],
         "بني": [
           "M",
-          "L",
-          "XL"
+          "L"
         ],
-        "كحلي غامق": [
+        "اسود": [
           "M",
-          "L",
-          "XXL"
+          "L"
         ],
         "بترولي": [
-          "M",
-          "XXL"
+          "M"
         ]
       },
       "colorImages": {
-        "اخضر": "https://i.postimg.cc/J0Mm8VZy/photo-23-2026-06-12-05-00-55.jpg",
-        "بني": "https://i.postimg.cc/mkj42Xy7/photo-62-2026-06-12-05-00-55.jpg",
-        "كحلي غامق": "https://i.postimg.cc/kGsCX1vx/photo-61-2026-06-12-05-00-55.jpg",
-        "بترولي": "https://i.postimg.cc/d3YVHL7W/image.png"
+        "اخضر": "https://i.postimg.cc/FKLJb5NF/photo-4-2026-09-24-22-24-45.jpg",
+        "بني": "https://i.postimg.cc/DzXbQkn8/photo-1-2026-09-24-22-24-45.jpg",
+        "اسود": "https://i.postimg.cc/TPDWjMfh/photo-2-2026-09-24-22-24-45.jpg",
+        "بترولي": "https://i.postimg.cc/xdzbGDn8/photo-3-2026-09-24-22-24-45.jpg"
       }
-    },
-    {
-      "id": 22,
-      "code": "105",
-      "name": "عباية كريب",
-      "desc": "الخامة كريب",
-      "price": 650,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/W3MjxbFR/photo-33-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/xCKYBTkW/photo-34-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/V6j12LST/photo-35-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "M",
-        "L"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
     },
     {
       "id": 23,
       "code": "128",
       "name": "سوت 3 قطع SPH",
       "desc": "الكاردي SPH والبيزك والبنطلون CY",
-      "price": 750,
-      "price_old": null,
+      "price": 650,
+      "price_old": 900,
       "images": [
-        "https://i.postimg.cc/J0x8465B/photo-18-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/MH5wKPmM/photo-19-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/tJkbCSNn/photo-20-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/JhLRF9jb/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -656,42 +593,21 @@
       "code": "136",
       "name": "عباية جبردين",
       "desc": "الخامة جبردين",
-      "price": 850,
-      "price_old": null,
+      "price": 670,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/9XdFn1ZF/photo-94-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/9XdFn1Z4/photo-95-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/BZTQVNH3/photo-96-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/DfryM5Ln/photo-97-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/gcVkT48P/photo-98-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/MTr2z4fj/photo-1-2026-09-24-22-30-16.jpg",
+        "https://i.postimg.cc/3Rb5360N/photo-2-2026-09-24-22-30-16.jpg"
       ],
       "category": "summer",
       "hasColors": true,
       "sizes": [],
       "colors": [
         "نبيتي",
-        "بني",
-        "اسود",
-        "زيتي",
         "كحلي"
       ],
       "colorSizes": {
         "نبيتي": [
-          "M",
-          "L",
-          "XL",
-          "XXL"
-        ],
-        "بني": [
-          "M",
-          "XL",
-          "XXL"
-        ],
-        "اسود": [
-          "L",
-          "XL"
-        ],
-        "زيتي": [
           "M",
           "L",
           "XL",
@@ -705,11 +621,8 @@
         ]
       },
       "colorImages": {
-        "نبيتي": "https://i.postimg.cc/gcVkT48P/photo-98-2026-06-12-05-00-55.jpg",
-        "بني": "https://i.postimg.cc/9XdFn1Z4/photo-95-2026-06-12-05-00-55.jpg",
-        "اسود": "https://i.postimg.cc/BZTQVNH3/photo-96-2026-06-12-05-00-55.jpg",
-        "زيتي": "https://i.postimg.cc/9XdFn1ZF/photo-94-2026-06-12-05-00-55.jpg",
-        "كحلي": "https://i.postimg.cc/0yTRdhKH/image.png"
+        "نبيتي": "https://i.postimg.cc/MTr2z4fj/photo-1-2026-09-24-22-30-16.jpg",
+        "كحلي": "https://i.postimg.cc/3Rb5360N/photo-2-2026-09-24-22-30-16.jpg"
       }
     },
     {
@@ -717,12 +630,12 @@
       "code": "5261",
       "name": "دريس جينز ريون",
       "desc": "الخامة جينز خفيف ريون فوم مقلم",
-      "price": 1200,
-      "price_old": null,
+      "price": 950,
+      "price_old": 1200,
       "images": [
-        "https://i.postimg.cc/brVF4m5g/photo-1-2026-06-13-02-42-58.jpg",
-        "https://i.postimg.cc/Y0DyTdP3/photo-2-2026-06-13-02-42-58.jpg",
-        "https://i.postimg.cc/8cXnxZYb/photo-3-2026-06-13-02-42-58.jpg"
+        "https://i.postimg.cc/dVBJz56G/photo-1-2026-09-24-22-32-22.jpg",
+        "https://i.postimg.cc/13HyLvBp/photo-2-2026-09-24-22-32-22.jpg",
+        "https://i.postimg.cc/QdbjRfm9/photo-3-2026-09-24-22-32-22.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -734,9 +647,7 @@
       ],
       "colorSizes": {
         "رصاصي": [
-          "M",
-          "L",
-          "XXL"
+          "M"
         ],
         "كحلي غامق": [
           "M",
@@ -750,53 +661,10 @@
         ]
       },
       "colorImages": {
-        "رصاصي": "https://i.postimg.cc/brVF4m5g/photo-1-2026-06-13-02-42-58.jpg",
-        "كحلي غامق": "https://i.postimg.cc/Y0DyTdP3/photo-2-2026-06-13-02-42-58.jpg",
-        "كحلي فاتح": "https://i.postimg.cc/8cXnxZYb/photo-3-2026-06-13-02-42-58.jpg"
+        "رصاصي": "https://i.postimg.cc/dVBJz56G/photo-1-2026-09-24-22-32-22.jpg",
+        "كحلي غامق": "https://i.postimg.cc/13HyLvBp/photo-2-2026-09-24-22-32-22.jpg",
+        "كحلي فاتح": "https://i.postimg.cc/QdbjRfm9/photo-3-2026-09-24-22-32-22.jpg"
       }
-    },
-    {
-      "id": 26,
-      "code": "5244",
-      "name": "إسدال خروج ITY",
-      "desc": "الخامة ITY مطعّم بجينز",
-      "price": 880,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/7LJqMNwB/photo-72-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/jjnRQhtM/photo-73-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/xdN9yPnt/photo-74-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "1",
-        "2"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
-      "id": 27,
-      "code": "5242",
-      "name": "اسدال خروج",
-      "desc": "الخامة ITY مطعّم بجينز",
-      "price": 850,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/W4qs67sP/photo-69-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/0NK9dCPL/photo-70-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/d0ZJm9wp/photo-71-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "1"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
     },
     {
       "id": 29,
@@ -804,9 +672,11 @@
       "name": "عبايه كتان",
       "desc": "الخامه كتان",
       "price": 450,
-      "price_old": 750,
+      "price_old": 800,
       "images": [
-        "https://i.postimg.cc/zvBXf5hd/photo-1-2026-06-13-16-45-33.jpg، https://i.postimg.cc/T1wYPGbt/photo-2-2026-06-13-16-45-33.jpg، https://i.postimg.cc/QCtxMs7S/photo-3-2026-06-13-16-45-33.jpg، https://i.postimg.cc/brJNv8nn/photo-4-2026-06-13-16-45-33.jpg"
+        "https://i.postimg.cc/rF96mK4s/photo-1-2026-09-24-22-35-05.jpg",
+        "https://i.postimg.cc/TYc8wpbw/photo-2-2026-09-24-22-35-05.jpg",
+        "https://i.postimg.cc/NfxhM5Xf/photo-3-2026-09-24-22-35-05.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -814,7 +684,6 @@
       "colors": [
         "اسود",
         "بني",
-        "اخضر غامق",
         "اخضر فاتح"
       ],
       "colorSizes": {
@@ -822,24 +691,16 @@
           "M"
         ],
         "بني": [
-          "M",
-          "L",
-          "XL"
-        ],
-        "اخضر غامق": [
-          "L"
+          "M"
         ],
         "اخضر فاتح": [
-          "M",
-          "L",
           "XXL"
         ]
       },
       "colorImages": {
-        "اسود": "https://i.postimg.cc/zvBXf5hd/photo-1-2026-06-13-16-45-33.jpg",
-        "بني": "https://i.postimg.cc/3Jnv5PnT/photo-2026-06-13-02-53-29.jpg",
-        "اخضر غامق": "https://i.postimg.cc/GhqywZqR/photo-2026-06-13-02-53-37.jpg",
-        "اخضر فاتح": "https://i.postimg.cc/RVXH5jGk/photo-2026-06-13-02-53-43.jpg"
+        "اسود": "https://i.postimg.cc/rF96mK4s/photo-1-2026-09-24-22-35-05.jpg",
+        "بني": "https://i.postimg.cc/TYc8wpbw/photo-2-2026-09-24-22-35-05.jpg",
+        "اخضر فاتح": "https://i.postimg.cc/NfxhM5Xf/photo-3-2026-09-24-22-35-05.jpg"
       }
     },
     {
@@ -847,19 +708,17 @@
       "code": "5259",
       "name": "دريس جينز خفيف ريون فوم مشجر",
       "desc": "الخامة كتان",
-      "price": 900,
-      "price_old": null,
+      "price": 700,
+      "price_old": 900,
       "images": [
-        "https://i.postimg.cc/KY3mr5xf/photo-75-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/2SKzZtRM/photo-76-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/ht5SdYW5/photo-77-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/mrvpVs9m/photo-1-2026-09-24-22-38-14.jpg",
+        "https://i.postimg.cc/d0bNnYC9/photo-2-2026-09-24-22-38-14.jpg"
       ],
       "category": "summer",
       "hasColors": true,
       "sizes": [],
       "colors": [
         "رصاصي",
-        "كحلي غامق",
         "كحلي فاتح"
       ],
       "colorSizes": {
@@ -869,9 +728,6 @@
           "XL",
           "XXL"
         ],
-        "كحلي غامق": [
-          "M"
-        ],
         "كحلي فاتح": [
           "M",
           "L",
@@ -880,64 +736,19 @@
         ]
       },
       "colorImages": {
-        "رصاصي": "https://i.postimg.cc/KY3mr5xf/photo-75-2026-06-12-05-00-55.jpg",
-        "كحلي غامق": "https://i.postimg.cc/2SKzZtRM/photo-76-2026-06-12-05-00-55.jpg",
-        "كحلي فاتح": "https://i.postimg.cc/ht5SdYW5/photo-77-2026-06-12-05-00-55.jpg"
+        "رصاصي": "https://i.postimg.cc/d0bNnYC9/photo-2-2026-09-24-22-38-14.jpg",
+        "كحلي فاتح": "https://i.postimg.cc/mrvpVs9m/photo-1-2026-09-24-22-38-14.jpg"
       }
-    },
-    {
-      "id": 31,
-      "code": "113",
-      "name": "عبايه كتان",
-      "desc": "الخامة كتان",
-      "price": 550,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/Bbp3QYB8/photo-24-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/2yGY8c7V/photo-25-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/T10xY7J1/photo-26-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "L"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
-      "id": 32,
-      "code": "201",
-      "name": "عبايه كريب مع تطريز",
-      "desc": "الخامة كريب مع تطريز",
-      "price": 750,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/fyDZsnXq/photo-30-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/Vvm1wQMH/photo-31-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/MTyxgKMJ/photo-32-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "M"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
     },
     {
       "id": 33,
       "code": "120",
       "name": "سوت سي واي",
       "desc": "الخامة سي واي",
-      "price": 650,
-      "price_old": null,
+      "price": 630,
+      "price_old": 800,
       "images": [
-        "https://i.postimg.cc/c41Z5WdY/photo-27-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/NfGYPtQH/photo-28-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/jdqKkTRJ/photo-29-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/sg1nrX9L/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -954,11 +765,9 @@
       "name": "عبايه جبردين هامر",
       "desc": "الخامة جبردين هامر",
       "price": 550,
-      "price_old": null,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/dQjwB3cy/photo-4-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/Y2zM30Bm/photo-5-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/T2Jf91vy/photo-6-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/90WpNFQZ/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -975,11 +784,9 @@
       "name": "عبايه كريب تطريز",
       "desc": "الخامه كريب مع تطريز",
       "price": 750,
-      "price_old": null,
+      "price_old": 950,
       "images": [
-        "https://i.postimg.cc/qMB0ZrpQ/photo-1-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/ZKYZDmJH/photo-2-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/RVC9bmvR/photo-3-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/L56t3Cy2/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -996,18 +803,15 @@
       "code": "210",
       "name": "عباية اوبن مع بيرك بليسيه — الخامة كريب مع تطريز",
       "desc": "الخامة كريب مع تطريز",
-      "price": 1000,
-      "price_old": null,
+      "price": 980,
+      "price_old": 1200,
       "images": [
-        "https://i.postimg.cc/3rFYBNQd/photo-7-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/J75Mq0Ch/photo-8-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/mZyBwkWg/photo-9-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/DfjLKcCD/image.png"
       ],
       "category": "summer",
       "hasColors": false,
       "sizes": [
-        "M",
-        "L"
+        "M"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1019,10 +823,9 @@
       "name": "عبايه كريب تطريز",
       "desc": "الخامة كريب مع تطريز",
       "price": 750,
-      "price_old": null,
+      "price_old": 950,
       "images": [
-        "https://i.postimg.cc/HxQHFsJQ/photo-43-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/1tpPb5gG/photo-44-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/wBg7NtfQ/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -1041,52 +844,37 @@
       "code": "125",
       "name": "عبايه كريب كونكورد",
       "desc": "الخامه كريب كونكورد",
-      "price": 700,
-      "price_old": null,
+      "price": 650,
+      "price_old": 900,
       "images": [
-        "https://i.postimg.cc/y6ysPxC4/photo-11-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/xj3nR8Vr/photo-12-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/7PnwVh8p/photo-13-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/PqX5xgJV/image.png"
       ],
       "category": "summer",
-      "hasColors": true,
-      "sizes": [],
-      "colors": [
-        "رصاصي",
-        "برتقاني طوبي"
+      "hasColors": false,
+      "sizes": [
+        "M"
       ],
-      "colorSizes": {
-        "رصاصي": [
-          "M"
-        ],
-        "برتقاني طوبي": [
-          "M"
-        ]
-      },
-      "colorImages": {
-        "رصاصي": "https://i.postimg.cc/7PnwVh8p/photo-13-2026-06-12-05-00-55.jpg",
-        "برتقاني طوبي": "https://i.postimg.cc/xj3nR8Vr/photo-12-2026-06-12-05-00-55.jpg"
-      }
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
     },
     {
       "id": 39,
       "code": "134",
       "name": "عبايه كتان فرنساوي",
       "desc": "الخامه كتان فرنساوى",
-      "price": 800,
-      "price_old": null,
+      "price": 650,
+      "price_old": 800,
       "images": [
-        "https://i.postimg.cc/gjspkSH4/photo-14-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/wM2zTfQV/photo-15-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/Wz8VbWw7/photo-16-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/05TmQNvk/photo-1-2026-09-24-22-48-01.jpg",
+        "https://i.postimg.cc/VsxM6Nwy/photo-2-2026-09-24-22-48-01.jpg"
       ],
       "category": "summer",
       "hasColors": true,
       "sizes": [],
       "colors": [
         "نبيتي في اسود",
-        "بني في بيج",
-        "سماوي في ابيض"
+        "بني في بيج"
       ],
       "colorSizes": {
         "نبيتي في اسود": [
@@ -1095,17 +883,12 @@
           "XXL"
         ],
         "بني في بيج": [
-          "M",
           "L"
-        ],
-        "سماوي في ابيض": [
-          "M"
         ]
       },
       "colorImages": {
-        "نبيتي في اسود": "https://i.postimg.cc/wM2zTfQV/photo-15-2026-06-12-05-00-55.jpg",
-        "بني في بيج": "https://i.postimg.cc/Wz8VbWw7/photo-16-2026-06-12-05-00-55.jpg",
-        "سماوي في ابيض": "https://i.postimg.cc/gjspkSH4/photo-14-2026-06-12-05-00-55.jpg"
+        "نبيتي في اسود": "https://i.postimg.cc/05TmQNvk/photo-1-2026-09-24-22-48-01.jpg",
+        "بني في بيج": "https://i.postimg.cc/VsxM6Nwy/photo-2-2026-09-24-22-48-01.jpg"
       }
     },
     {
@@ -1113,12 +896,10 @@
       "code": "139",
       "name": "سوت قطعتين سي واي",
       "desc": "سوت قطعتين\n الخامه كريب في سى واى",
-      "price": 850,
-      "price_old": null,
+      "price": 700,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/9FcF5TYZ/photo-88-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/0292Rm0y/photo-89-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/Fshs5cVf/photo-90-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/ydwJkLwy/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -1135,12 +916,11 @@
       "code": "133",
       "name": "سوت قطعتين سى واى",
       "desc": "سوت قطعتين\n الخامه سى واى",
-      "price": 800,
-      "price_old": null,
+      "price": 700,
+      "price_old": 800,
       "images": [
-        "https://i.postimg.cc/J0x84654/photo-21-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/kGsCX1vg/photo-59-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/90b2F8YW/photo-60-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/VkDdjfxv/photo-1-2026-09-24-22-50-21.jpg",
+        "https://i.postimg.cc/Mpdvy6CG/photo-2-2026-09-24-22-50-21.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -1164,8 +944,8 @@
         ]
       },
       "colorImages": {
-        "ازرق": "https://i.postimg.cc/90b2F8YW/photo-60-2026-06-12-05-00-55.jpg",
-        "زيتي": "https://i.postimg.cc/kGsCX1vg/photo-59-2026-06-12-05-00-55.jpg"
+        "ازرق": "https://i.postimg.cc/VkDdjfxv/photo-1-2026-09-24-22-50-21.jpg",
+        "زيتي": "https://i.postimg.cc/Mpdvy6CG/photo-2-2026-09-24-22-50-21.jpg"
       }
     },
     {
@@ -1173,12 +953,12 @@
       "code": "138",
       "name": "دريس",
       "desc": "الخامه المشجر sph\nوالابيض كتان",
-      "price": 800,
-      "price_old": null,
+      "price": 600,
+      "price_old": 800,
       "images": [
-        "https://i.postimg.cc/bNLYzJmm/photo-85-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/X7xNVJsc/photo-86-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/m2VZbDmQ/photo-87-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/zXNB6H5h/photo-1-2026-09-24-22-51-53.jpg",
+        "https://i.postimg.cc/DyhZH4FX/photo-2-2026-09-24-22-51-53.jpg",
+        "https://i.postimg.cc/VLw6p010/photo-3-2026-09-24-22-51-53.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -1209,31 +989,10 @@
         ]
       },
       "colorImages": {
-        "اخضر": "https://i.postimg.cc/X7xNVJsc/photo-86-2026-06-12-05-00-55.jpg",
-        "بيج": "https://i.postimg.cc/m2VZbDmQ/photo-87-2026-06-12-05-00-55.jpg",
-        "بينك": "https://i.postimg.cc/59hXcLhD/photo-85-2026-06-12-05-00-55.jpg"
+        "اخضر": "https://i.postimg.cc/VLw6p010/photo-3-2026-09-24-22-51-53.jpg",
+        "بيج": "https://i.postimg.cc/DyhZH4FX/photo-2-2026-09-24-22-51-53.jpg",
+        "بينك": "https://i.postimg.cc/zXNB6H5h/photo-1-2026-09-24-22-51-53.jpg"
       }
-    },
-    {
-      "id": 43,
-      "code": "131",
-      "name": "عباية كريب جينز",
-      "desc": "الخامة كريب في جينز",
-      "price": 950,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/PrdrsZQf/photo-91-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/h4LP5MTf/photo-92-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/y6mYbnc3/photo-93-2026-06-12-05-00-55.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "XL"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
     },
     {
       "id": 44,
@@ -1241,18 +1000,15 @@
       "name": "عباية كريب تطريز",
       "desc": "الخامة كريب مع تطريز",
       "price": 600,
-      "price_old": null,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/X7N3DWnk/photo-49-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/3Jr7bh3j/photo-50-2026-06-12-05-00-55.jpg",
-        "https://i.postimg.cc/QxNsnDjc/photo-51-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/j5VKfBSC/image.png"
       ],
       "category": "summer",
       "hasColors": false,
       "sizes": [
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1264,17 +1020,16 @@
       "name": "عبايه كريب",
       "desc": "الخامة كريب",
       "price": 550,
-      "price_old": null,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/FFVNZzXc/photo-52-2026-06-12-05-00-55.jpg، https://i.postimg.cc/G3xdQtnv/photo-53-2026-06-12-05-00-55.jpg، https://i.postimg.cc/FFVNZzXS/photo-54-2026-06-12-05-00-55.jpg"
+        "https://i.postimg.cc/Y0RwJ9fq/image.png"
       ],
       "category": "summer",
       "hasColors": false,
       "sizes": [
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1286,9 +1041,9 @@
       "name": "عباية جبردين",
       "desc": "الخامة جبردين",
       "price": 550,
-      "price_old": null,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/HsWHPmTj/photo-1-2026-06-12-05-03-08.jpg، https://i.postimg.cc/HsWHPmT8/photo-2-2026-06-12-05-03-08.jpg، https://i.postimg.cc/VLs1Hwzd/photo-3-2026-06-12-05-03-08.jpg"
+        "https://i.postimg.cc/15WQB83C/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -1304,10 +1059,12 @@
       "code": "141",
       "name": "دريس قطعتين",
       "desc": "الخامة كتان",
-      "price": 950,
-      "price_old": null,
+      "price": 800,
+      "price_old": 950,
       "images": [
-        "https://i.postimg.cc/ncTVHzdx/photo-29-2026-06-12-05-03-08.jpg، https://i.postimg.cc/xTgj0C6W/photo-30-2026-06-12-05-03-08.jpg، https://i.postimg.cc/VL4sY67y/photo-31-2026-06-12-05-03-08.jpg"
+        "https://i.postimg.cc/TwXM1mtd/photo-1-2026-09-24-22-55-45.jpg",
+        "https://i.postimg.cc/pTtbr8sV/photo-2-2026-09-24-22-55-45.jpg",
+        "https://i.postimg.cc/85VQcWZT/photo-3-2026-09-24-22-55-45.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -1321,13 +1078,11 @@
         "ازرق": [
           "M",
           "L",
-          "XL",
-          "XXL"
+          "XL"
         ],
         "اخضر": [
           "M",
           "L",
-          "XL",
           "XXL"
         ],
         "اسود": [
@@ -1338,9 +1093,9 @@
         ]
       },
       "colorImages": {
-        "ازرق": "https://i.postimg.cc/xTgj0C6W/photo-30-2026-06-12-05-03-08.jpg",
-        "اخضر": "https://i.postimg.cc/ncTVHzdx/photo-29-2026-06-12-05-03-08.jpg",
-        "اسود": "https://i.postimg.cc/VL4sY67y/photo-31-2026-06-12-05-03-08.jpg"
+        "ازرق": "https://i.postimg.cc/85VQcWZT/photo-3-2026-09-24-22-55-45.jpg",
+        "اخضر": "https://i.postimg.cc/TwXM1mtd/photo-1-2026-09-24-22-55-45.jpg",
+        "اسود": "https://i.postimg.cc/pTtbr8sV/photo-2-2026-09-24-22-55-45.jpg"
       }
     },
     {
@@ -1348,44 +1103,33 @@
       "code": "135",
       "name": "عبايه كريب سي واي",
       "desc": "الخامه كريب في سي واي",
-      "price": 850,
-      "price_old": null,
+      "price": 650,
+      "price_old": 850,
       "images": [
-        "https://i.postimg.cc/zXqXZWFF/photo-32-2026-06-12-05-03-08.jpg، https://i.postimg.cc/vHGHF9tL/photo-33-2026-06-12-05-03-08.jpg، https://i.postimg.cc/65B5JRfV/photo-34-2026-06-12-05-03-08.jpg"
+        "https://i.postimg.cc/QM1w2CjV/image.png"
       ],
       "category": "summer",
-      "hasColors": true,
-      "sizes": [],
-      "colors": [
-        "اسود",
-        "بيج"
+      "hasColors": false,
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
-      "colorSizes": {
-        "اسود": [
-          "M",
-          "XL"
-        ],
-        "بيج": [
-          "M",
-          "L",
-          "XL",
-          "XXL"
-        ]
-      },
-      "colorImages": {
-        "اسود": "https://i.postimg.cc/vHGHF9tL/photo-33-2026-06-12-05-03-08.jpg",
-        "بيج": "https://i.postimg.cc/65B5JRfV/photo-34-2026-06-12-05-03-08.jpg"
-      }
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
     },
     {
       "id": 49,
       "code": "140",
       "name": "سوت قطعتين",
       "desc": "الخامه سي واي في جينز",
-      "price": 900,
-      "price_old": null,
+      "price": 700,
+      "price_old": 900,
       "images": [
-        "https://i.postimg.cc/3w03CZ3R/photo-13-2026-06-12-05-03-08.jpg، https://i.postimg.cc/pd5PYBPd/photo-14-2026-06-12-05-03-08.jpg، https://i.postimg.cc/q76pXGpv/photo-15-2026-06-12-05-03-08.jpg، https://i.postimg.cc/7LJqMNqx/photo-16-2026-06-12-05-03-08.jpg"
+        "https://i.postimg.cc/Pf29sBnC/photo-1-2026-09-24-22-58-28.jpg",
+        "https://i.postimg.cc/HWBRDf1j/photo-2-2026-09-24-22-58-28.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -1404,71 +1148,9 @@
         ]
       },
       "colorImages": {
-        "اسود": "https://i.postimg.cc/3w03CZ3R/photo-13-2026-06-12-05-03-08.jpg",
-        "زيتي": "https://i.postimg.cc/7LJqMNqx/photo-16-2026-06-12-05-03-08.jpg"
+        "اسود": "https://i.postimg.cc/Pf29sBnC/photo-1-2026-09-24-22-58-28.jpg",
+        "زيتي": "https://i.postimg.cc/HWBRDf1j/photo-2-2026-09-24-22-58-28.jpg"
       }
-    },
-    {
-      "id": 50,
-      "code": "5265",
-      "name": "سوت 3 قطع ووتر بروف",
-      "desc": "الخامة ووتر بروف — 3 قطع توب + بنطلون + بندانة",
-      "price": 850,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/13j9qdhf/photo-17-2026-06-12-05-03-08.jpg، https://i.postimg.cc/HkhpyNDx/photo-18-2026-06-12-05-03-08.jpg، https://i.postimg.cc/Vk6f58Tn/photo-19-2026-06-12-05-03-08.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "L",
-        "5XL"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
-      "id": 51,
-      "code": "5268",
-      "name": "سوت 3 قطع ووتر بروف",
-      "desc": "الخامة ووتر بروف — 3 قطع",
-      "price": 850,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/NjMsLcVX/photo-20-2026-06-12-05-03-08.jpg، https://i.postimg.cc/2S6k3DJV/photo-21-2026-06-12-05-03-08.jpg، https://i.postimg.cc/Vk6f58Tv/photo-22-2026-06-12-05-03-08.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "L",
-        "XL",
-        "5XL"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
-      "id": 52,
-      "code": "5267",
-      "name": "سوت 3 قطع ووتر بروف",
-      "desc": "الخامة ووتر بروف — 3 قطع توب + بنطلون + بندانة",
-      "price": 850,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/x1Cfq27j/photo-23-2026-06-12-05-03-08.jpg، https://i.postimg.cc/wjvq3pP9/photo-24-2026-06-12-05-03-08.jpg، https://i.postimg.cc/bwJydhMP/photo-25-2026-06-12-05-03-08.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "XL",
-        "3XL",
-        "5XL"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
     },
     {
       "id": 53,
@@ -1476,17 +1158,16 @@
       "name": "عباية كريب تطريز",
       "desc": "الخامة كريب مع تطريز",
       "price": 750,
-      "price_old": null,
+      "price_old": 950,
       "images": [
-        "https://i.postimg.cc/MTkqsjG6/photo-10-2026-06-12-05-03-08.jpg، https://i.postimg.cc/63stHGQX/photo-11-2026-06-12-05-03-08.jpg، https://i.postimg.cc/MTkqsjG8/photo-12-2026-06-12-05-03-08.jpg"
+        "https://i.postimg.cc/gJ4Sp65s/image.png"
       ],
       "category": "summer",
       "hasColors": false,
       "sizes": [
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XL"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1498,9 +1179,9 @@
       "name": "عباية كريب تطريز",
       "desc": "الخامة كريب مع تطريز",
       "price": 750,
-      "price_old": null,
+      "price_old": 950,
       "images": [
-        "https://i.postimg.cc/Y91kTq4L/photo-7-2026-06-12-05-03-08.jpg، https://i.postimg.cc/Tw8fkWPq/photo-8-2026-06-12-05-03-08.jpg، https://i.postimg.cc/50cbPFtB/photo-9-2026-06-12-05-03-08.jpg"
+        "https://i.postimg.cc/NGJJPmR9/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -1519,8 +1200,8 @@
       "code": "بيزك",
       "name": "بيزك رويال",
       "desc": "بيزك رويال تايجر كت",
-      "price": 450,
-      "price_old": null,
+      "price": 350,
+      "price_old": 500,
       "images": [
         "https://i.postimg.cc/7YqWDw0d/photo-1-2026-06-16-23-34-10.jpg، https://i.postimg.cc/y6mbwk3B/photo-2-2026-06-16-23-34-10.jpg، https://i.postimg.cc/WpGHQhFx/photo-3-2026-06-16-23-34-10.jpg"
       ],
@@ -1533,9 +1214,7 @@
       ],
       "colorSizes": {
         "رويال": [
-          "M",
-          "L",
-          "XL"
+          "M"
         ],
         "روزالين": [
           "M",
@@ -1549,52 +1228,14 @@
       }
     },
     {
-      "id": 1781906509580,
-      "code": "5277",
-      "name": "دريس كت وجاكت",
-      "desc": "الخامة: الدريس روز كريب والجاكت روزالين",
-      "price": 1150,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/KjcLwdyz/photo-1-2026-06-20-00-59-12.jpg، https://i.postimg.cc/mkZMJ0Gr/photo-2-2026-06-20-00-59-12.jpg، https://i.postimg.cc/WzprCQPb/photo-3-2026-06-20-00-59-12.jpg"
-      ],
-      "category": "summer",
-      "hasColors": true,
-      "sizes": [],
-      "colors": [
-        "اسود",
-        "ابيض",
-        "بني"
-      ],
-      "colorSizes": {
-        "اسود": [
-          "L"
-        ],
-        "ابيض": [
-          "M",
-          "L",
-          "XXL"
-        ],
-        "بني": [
-          "L",
-          "XL"
-        ]
-      },
-      "colorImages": {
-        "اسود": "https://i.postimg.cc/KjcLwdyz/photo-1-2026-06-20-00-59-12.jpg",
-        "ابيض": "https://i.postimg.cc/mkZMJ0Gr/photo-2-2026-06-20-00-59-12.jpg",
-        "بني": "https://i.postimg.cc/WzprCQPb/photo-3-2026-06-20-00-59-12.jpg"
-      }
-    },
-    {
       "id": 1781906618924,
       "code": "5245",
       "name": "عبايه كريب",
       "desc": "الخامة: كريب",
-      "price": 1000,
-      "price_old": null,
+      "price": 800,
+      "price_old": 1000,
       "images": [
-        "https://i.postimg.cc/XY5ZHVyk/photo-1-2026-06-20-01-02-48.jpg، https://i.postimg.cc/Qd7B4XWb/photo-2-2026-06-20-01-02-48.jpg، https://i.postimg.cc/XY5ZHVyc/photo-3-2026-06-20-01-02-48.jpg، https://i.postimg.cc/DwGWj2br/photo-4-2026-06-20-01-02-48.jpg"
+        "https://i.postimg.cc/CMQ74YVs/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -1606,33 +1247,14 @@
       "colorImages": {}
     },
     {
-      "id": 1782093876140,
-      "code": "318",
-      "name": "عبايه جبردين هامر",
-      "desc": "الخامه جبردين هامر",
-      "price": 550,
-      "price_old": null,
-      "images": [
-        "https://i.postimg.cc/J0SGfmJT/photo-1-2026-06-22-05-00-59.jpg، https://i.postimg.cc/90sr6VTL/photo-2-2026-06-22-05-00-59.jpg، https://i.postimg.cc/nrNCyZ7T/photo-3-2026-06-22-05-00-59.jpg"
-      ],
-      "category": "summer",
-      "hasColors": false,
-      "sizes": [
-        "M"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
       "id": 1782146425356,
       "code": "406",
       "name": "دريس جينز",
       "desc": "دريس جينز والكم رويال",
-      "price": 1200,
-      "price_old": null,
+      "price": 950,
+      "price_old": 1200,
       "images": [
-        "https://i.postimg.cc/tRtSZSC7/photo-1-2026-06-22-15-02-42.jpg، https://i.postimg.cc/pVYGhGXT/photo-2-2026-06-22-15-02-42.jpg، https://i.postimg.cc/VsBGrGsx/photo-3-2026-06-22-15-02-42.jpg"
+        "https://i.postimg.cc/cJ0BJLQy/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -1649,9 +1271,9 @@
       "name": "عبايه كريب تطريز",
       "desc": "الخامه كريب مع تطريز",
       "price": 750,
-      "price_old": null,
+      "price_old": 950,
       "images": [
-        "https://i.postimg.cc/Z5GzcdJW/photo-1-2026-06-22-19-41-15.jpg، https://i.postimg.cc/fRGQK9M3/photo-2-2026-06-22-19-41-15.jpg، https://i.postimg.cc/Qd9r1bZg/photo-3-2026-06-22-19-41-15.jpg"
+        "https://i.postimg.cc/bJv0QVCL/image.png"
       ],
       "category": "summer",
       "hasColors": false,
@@ -1670,10 +1292,11 @@
       "code": "143",
       "name": "سوت قطعتين",
       "desc": "سوت قطعتين الخامة كتان",
-      "price": 900,
-      "price_old": null,
+      "price": 700,
+      "price_old": 900,
       "images": [
-        "https://i.postimg.cc/JnTTpfbG/photo-1-2026-06-22-19-44-07.jpg، https://i.postimg.cc/ZRffwGr9/photo-2-2026-06-22-19-44-07.jpg، https://i.postimg.cc/bJ66m7QZ/photo-3-2026-06-22-19-44-07.jpg، https://i.postimg.cc/qRmm1P8T/photo-4-2026-06-22-19-44-07.jpg"
+        "https://i.postimg.cc/j2pzYxsk/photo-1-2026-09-24-23-04-24.jpg",
+        "https://i.postimg.cc/vTJWwYQ3/photo-2-2026-09-24-23-04-24.jpg"
       ],
       "category": "summer",
       "hasColors": true,
@@ -1697,8 +1320,8 @@
         ]
       },
       "colorImages": {
-        "اخضر": "https://i.postimg.cc/JnTTpfbG/photo-1-2026-06-22-19-44-07.jpg",
-        "اسود": "https://i.postimg.cc/bJ66m7QZ/photo-3-2026-06-22-19-44-07.jpg"
+        "اخضر": "https://i.postimg.cc/vTJWwYQ3/photo-2-2026-09-24-23-04-24.jpg",
+        "اسود": "https://i.postimg.cc/j2pzYxsk/photo-1-2026-09-24-23-04-24.jpg"
       }
     },
     {
@@ -1742,5 +1365,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "٢٤‏/٩‏/٢٠٢٦، ٨:٢٦:٣٦ م"
+  "exportedAt": "٢٤‏/٩‏/٢٠٢٦، ١١:٠٥:٤٥ م"
 }
