@@ -81,9 +81,8 @@
       "price": 450,
       "price_old": 600,
       "images": [
-        "https://i.postimg.cc/PxBFjC6X/photo-1-2026-06-07-23-32-57.jpg",
-        "https://i.postimg.cc/wvSbp1Wj/photo-2-2026-06-07-23-32-57.jpg",
-        "https://i.postimg.cc/0QLHszV3/photo-3-2026-06-07-23-32-57.jpg"
+        "https://i.postimg.cc/rF78c6Cc/photo-1-2026-09-24-19-51-44.jpg",
+        "https://i.postimg.cc/8Px1D8BQ/photo-2-2026-09-24-19-51-44.jpg"
       ],
       "category": "winter",
       "hasColors": false,
@@ -256,31 +255,6 @@
       "hasColors": false,
       "sizes": [
         "M"
-      ],
-      "colors": [],
-      "colorSizes": {},
-      "colorImages": {}
-    },
-    {
-      "id": 13,
-      "code": "5203",
-      "name": "عباية جينز تكسيد",
-      "desc": "دريس جينز تكسيد — الخامة جينز",
-      "price": 900,
-      "price_old": 1100,
-      "images": [
-        "https://i.postimg.cc/BQ2BjYvp/preview-(7).webp",
-        "https://i.postimg.cc/hPV1XyGr/preview-(8).webp",
-        "https://i.postimg.cc/NfRkKJ0x/preview-(9).webp",
-        "https://i.postimg.cc/Ghvx47pJ/preview-(10).webp"
-      ],
-      "category": "winter",
-      "hasColors": false,
-      "sizes": [
-        "M",
-        "L",
-        "XL",
-        "XXL"
       ],
       "colors": [],
       "colorSizes": {},
@@ -1768,5 +1742,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "٢٤‏/٩‏/٢٠٢٦، ٨:١٩:٢٥ م"
+  "exportedAt": "٢٤‏/٩‏/٢٠٢٦، ٨:٢٦:٣٦ م"
 }
