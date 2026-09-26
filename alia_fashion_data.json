@@ -1367,6 +1367,49 @@
       "colors": [],
       "colorSizes": {},
       "colorImages": {}
+    },
+    {
+      "id": 1790450474951,
+      "code": "5289",
+      "name": "سوت قطعتين",
+      "desc": "الخامة: جينز",
+      "price": 1400,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/gcCSxfkF/photo-1-2026-09-26-22-18-14.jpg",
+        "https://i.postimg.cc/T2z7KZ2z/photo-2-2026-09-26-22-18-14.jpg",
+        "https://i.postimg.cc/7YSB0mbK/photo-3-2026-09-26-22-18-14.jpg",
+        "https://i.postimg.cc/8k2K7qkY/photo-4-2026-09-26-22-18-14.jpg",
+        "https://i.postimg.cc/kM012kMp/photo-5-2026-09-26-22-18-14.jpg",
+        "https://i.postimg.cc/L4cCJr4Q/photo-6-2026-09-26-22-18-14.jpg",
+        "https://i.postimg.cc/zDsty9Dt/photo-7-2026-09-26-22-18-14.jpg",
+        "https://i.postimg.cc/ryBnDvyJ/photo-8-2026-09-26-22-18-14.jpg"
+      ],
+      "category": "summer",
+      "hasColors": true,
+      "sizes": [],
+      "colors": [
+        "ازرق",
+        "اسود"
+      ],
+      "colorSizes": {
+        "ازرق": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "اسود": [
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "colorImages": {
+        "ازرق": "https://i.postimg.cc/7YSB0mbK/photo-3-2026-09-26-22-18-14.jpg",
+        "اسود": "https://i.postimg.cc/kM012kMp/photo-5-2026-09-26-22-18-14.jpg"
+      }
     }
   ],
   "orders": [],
@@ -1390,5 +1433,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "٢٦‏/٩‏/٢٠٢٦، ٧:٠٤:٢٠ م"
+  "exportedAt": "٢٦‏/٩‏/٢٠٢٦، ١٠:٢١:١٨ م"
 }
