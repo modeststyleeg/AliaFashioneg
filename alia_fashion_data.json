@@ -1342,6 +1342,31 @@
       "colors": [],
       "colorSizes": {},
       "colorImages": {}
+    },
+    {
+      "id": 1790438657997,
+      "code": "5288",
+      "name": "سوت قطعتين",
+      "desc": "الخامة: ميلتون في جينز",
+      "price": 1350,
+      "price_old": null,
+      "images": [
+        "https://i.postimg.cc/wBmH6xy2/photo-1-2026-09-26-19-03-02.jpg",
+        "https://i.postimg.cc/Gpyrc38z/photo-2-2026-09-26-19-03-02.jpg",
+        "https://i.postimg.cc/pdFx2VhJ/photo-3-2026-09-26-19-03-02.jpg",
+        "https://i.postimg.cc/jj7KsqwW/photo-4-2026-09-26-19-03-02.jpg"
+      ],
+      "category": "winter",
+      "hasColors": false,
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [],
+      "colorSizes": {},
+      "colorImages": {}
     }
   ],
   "orders": [],
@@ -1365,5 +1390,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "٢٤‏/٩‏/٢٠٢٦، ١١:٠٥:٤٥ م"
+  "exportedAt": "٢٦‏/٩‏/٢٠٢٦، ٧:٠٤:٢٠ م"
 }
