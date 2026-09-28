@@ -1074,7 +1074,7 @@ src="https://www.facebook.com/tr?id=3098759040331414&ev=PageView&noscript=1"
     <span style="color:#fff;font-weight:900;font-size:1rem;letter-spacing:.04em">ALIA FASHION | عاليا فاشون</span>
     <button onclick="byId('sizeGuideModal').classList.remove('open')" style="background:rgba(255,255,255,.15);border:none;color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:1rem">✕</button>
   </div>
-  <img src="https://i.postimg.cc/wTfX4ZhR/Whats-App-Image-2026-06-13-at-7-46-01-PM.jpg" style="width:100%;display:block;object-fit:contain" alt="Size Chart">
+  <img src="https://i.postimg.cc/prng1jW0/image.png" style="width:100%;display:block;object-fit:contain" alt="Size Chart">
 </div>
 </div>
 
@@ -2688,7 +2688,7 @@ const CHARTS={
 const chartFor=type=>CHARTS[type]||CHARTS.abaya;
 const suggestSize=(type,c)=>{const ch=chartFor(type);return(ch.find(x=>c<=x[0])||ch[ch.length-1])[1]};
 const collLabel={abaya:'العبايات',isdal:'الإسدالات',burkini:'البوركيني'};
-const CHART_URL='https://i.postimg.cc/wTfX4ZhR/Whats-App-Image-2026-06-13-at-7-46-01-PM.jpg';
+const CHART_URL='https://i.postimg.cc/prng1jW0/image.png';
 const sendChartImg=()=>bot('دي صورة بتوضح إزاي تقيسي نص محيط الصدر: حطي الشريط من تحت الإبط لتحت الإبط التاني وهو الموديل مفرود قدامك، وابعتيلي الرقم اللي طلعلك بالسم 🤍',null,CHART_URL);
 const nearestAvail=(sug,list)=>{if(!list.length)return sug;if(list.includes(sug))return sug;
  const ord=['S','M','L','XL','XXL','XXXL'],i=ord.indexOf(sug);let best=list[0],bd=99;
