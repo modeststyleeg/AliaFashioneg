@@ -4,6 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Alia Fashion | عبايات صيفي وشتوي - متجر أونلاين مصر</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#a07840">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="عاليا فاشون">
 <meta name="google-site-verification" content="6829_xKESae6J_x70bse3Px1jBSawiYU7qdFDvIVyl4" />
 <meta name="description" content="Alia Fashion - متجر عبايات صيفي وشتوي في مصر. تشكيلة 2026 من العبايات بخامات مختارة وأسعار مناسبة. شحن لجميع محافظات مصر. دفع عند الاستلام.">
 <meta name="keywords" content="Alia Fashion, عبايات, عبايات صيفي, عبايات شتوي, عبايات مصر, عبايات 2026, ملابس محجبات, عباية كريب, عباية جينز">
@@ -2503,7 +2511,7 @@ const AI_ENDPOINT=''; // ← ضعي هنا رابط الـ Worker بعد الن�
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const nz=s=>String(s||'').replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/[\u064B-\u0652]/g,'').toLowerCase();
 const SEASONS={summer:'☀️ الصيفي',winter:'❄️ الشتوي'}; // أي كولكشن جديد بيظهر تلقائيًا باسمه
-const TYPES=[['suit','سوت وأطقم',/سوت|طقم/],['isdal','إسدالات',/اسدال/],['cardi','كاردي',/كاردي/],['gilet','جيليه',/جيليه/],['hoodie','هودي',/هودي/],['shemiz','شميز',/شميز/],['coat','جاكت وبالطو',/بالطو|جاكت|جاكيت|كوت|ترانش/],['dress','دريس',/دريس/],['abaya','عبايات',/عباي/],['basic','بيزك',/بيزك/]];
+const TYPES=[['suit','سوت وأطقم',/سوت|طقم/],['isdal','إسدالات',/اسدال/],['cardi','كاردي',/كاردي/],['gilet','جيليه',/جيليه/],['hoodie','هودي',/هودي/],['shemiz','شميز',/شميز/],['coat','جاكت وبالطو',/بالطو|جاكت|جاكيت|كوت|ترانش/],['dress','دريس',/دريس/],['abaya','عبايات',/عباي/],['burkini','بوركيني',/بوركين/],['basic','بيزك',/بيزك/]];
 const HEX={'بشره':'#e3bfa0','خمري':'#7a2333','جملي':'#b98a5b','فيروزي':'#2bb5b0','سماوي':'#87ceeb','لبني':'#cfe3f3','عنابي':'#6d1f3a','كافيه':'#8b6b4a','اوف وايت':'#f0ebe0','اصفر':'#e6c84a','اسود':'#1a1814','ابيض':'#f4f1ea','بيج':'#d9c3a3','كحلي':'#1f2a5a','بني':'#6d4c41','زيتي':'#4f5b2e','زيتوني':'#6b7a2a','رمادي':'#8a8d91','رصاصي':'#8a8d91','نبيتي':'#6d1f3a','بردقاني':'#e59a4a','تيراكوتا':'#c66a4a','بترولي':'#1d5f6b','موف':'#9b7fb5','كاميل':'#c19a6b','سيلستي':'#9cc3e6','اخضر':'#3f7d4e','احمر':'#b3261e','ازرق':'#2980b9','وردي':'#e08fa6'};
 const S={season:'all',type:null,sizes:new Set(),colors:new Set(),min:null,max:null,avail:false,sort:'new',view:'grid',code:null,codeQ:'',q:null};let DISP=new Map();
 const typeOf=p=>{const n=nz(p.name);for(const t of TYPES)if(t[2].test(n))return t[0];return 'other'};
@@ -2652,7 +2660,9 @@ function apply(r){const s=r.season||S.season;clearAll();S.season=s;S.type=r.type
 const hist=[];
 const feeTxt=()=>{const g={};[...$('checkoutProvince').options].forEach(o=>(g[o.dataset.fee]=g[o.dataset.fee]||[]).push(o.value));return 'رسوم الشحن حسب المحافظة:\n'+Object.entries(g).map(([f,v])=>`• ${f} ج: ${v.join('، ')}`).join('\n')};
 const retTxt=()=>settings.return||'لتفاصيل الاستبدال والاسترجاع برجاء التواصل مع خدمة العملاء.';
-function bot(t,acts){const m=document.createElement('div');m.className='ai-m bot';m.textContent=t;
+function bot(t,acts,img){const m=document.createElement('div');m.className='ai-m bot';
+ if(img){const im=document.createElement('img');im.src=img;im.alt='دليل القياس';im.style.cssText='width:100%;max-width:220px;border-radius:12px;display:block;margin-bottom:8px;cursor:pointer';im.onclick=()=>window.open(img,'_blank');m.appendChild(im)}
+ const tx=document.createElement('div');tx.style.whiteSpace='pre-wrap';tx.textContent=t;m.appendChild(tx);
  if(acts){const a=document.createElement('div');a.className='ai-act';acts.forEach(([l,f])=>{const b=document.createElement('button');b.className='fx-btn';b.textContent=l;b.onclick=f;a.appendChild(b)});m.appendChild(a)}
  $('aiMsgs').appendChild(m);$('aiMsgs').scrollTop=1e9;return m}
 function me(t){const m=document.createElement('div');m.className='ai-m me';m.textContent=t;$('aiMsgs').appendChild(m);$('aiMsgs').scrollTop=1e9}
@@ -2660,13 +2670,29 @@ const WA=m=>['كلّمي خدمة العملاء واتساب',()=>openWhatsApp(
 function openAI(){$('aiPanel').classList.add('open');if(!$('aiMsgs').children.length){bot('أهلاً بحضرتك في عاليا فاشون 🤍\nأنا مساعدتك الذكية، أقدر أساعدك تختاري الموديل المناسب، تعرفي تفاصيل المنتجات أو تعملي أوردر بسهولة.')}}
 const closeAI=()=>$('aiPanel').classList.remove('open');
 $('aiFab').onclick=()=>$('aiPanel').classList.contains('open')?closeAI():openAI();$('aiClose').onclick=closeAI;
-const QA=[['اكتشفي ستايلك ✨',()=>{closeAI();go('finder')}],['البحث عن موديل',()=>{closeAI();go('finder');$('fxCode').focus()}],['ساعديني أختار مقاسي',()=>{closeAI();$('sizeGuideModal').classList.add('open')}],
+const QA=[['اكتشفي ستايلك ✨',()=>{closeAI();go('finder')}],['البحث عن موديل',()=>{closeAI();go('finder');$('fxCode').focus()}],['ساعديني أختار مقاسي',()=>{flow={step:'freetype'};bot('الموديل من أنهي مجموعة يا فندم؟',[['عبايات',()=>{flow={step:'freehelp',chType:'abaya'};bot('تمام، قوليلي نص محيط الصدر بالسم (من تحت الإبط لتحت الإبط) 🤍')}],['إسدالات',()=>{flow={step:'freehelp',chType:'isdal'};bot('تمام، قوليلي نص محيط الصدر بالسم 🤍')}],['بوركيني',()=>{flow={step:'freehelp',chType:'burkini'};bot('تمام، قوليلي نص محيط الصدر بالسم 🤍')}]])}],
 ['متابعة أوردر',()=>bot('متابعة الأوردر بتتم عن طريق خدمة العملاء عشان نتأكد من بياناتك الأول. ابعتيلهم رقم الطلب ورقم الموبايل اللي سجلتيه.',[WA('عايزة أتابع أوردر — رقم الطلب: ')])],
 ['الشحن والاستبدال',()=>bot(feeTxt()+'\n\nالاستبدال والاسترجاع:\n'+retTxt())],
 ['إتمام طلب',()=>{flow=null;cart.length?startCheckout():askModel()}]];
 $('aiQuick').innerHTML='';QA.forEach(([l,f])=>{const b=document.createElement('button');b.className='fx-btn';b.textContent=l;b.onclick=()=>{openAI();f()};$('aiQuick').appendChild(b)});
 const ctx=()=>({catalog:products.map(p=>[p.code,p.name,p.price,p.price_old||'',SEASONS[p.category]||p.category,tLabel(typeOf(p)),colorsOf(p).join('/'),sortSz(sizesOf(p).slice()).join('/'),(p.desc||'').slice(0,80)].join('|')).join('\n').slice(0,9000),shipping:feeTxt(),returns:retTxt(),about:settings.about||''});
 
+
+// جدول تقريبي وزن↔مقاس — عدّليه بأرقام مقاسات عاليا فاشون الحقيقية من صورة الدليل
+// نص محيط الصدر بالسم ↔ المقاس، من جدول عاليا فاشون الرسمي لكل مجموعة
+const CHARTS={
+ abaya:[[54,'M'],[58,'L'],[62,'XL'],[66,'XXL']],
+ isdal:[[60,'1'],[75,'2']],
+ burkini:[[54,'L'],[57,'XL'],[59,'XXL'],[61,'XXXL'],[64,'4XL'],[67,'5XL']],
+};
+const chartFor=type=>CHARTS[type]||CHARTS.abaya;
+const suggestSize=(type,c)=>{const ch=chartFor(type);return(ch.find(x=>c<=x[0])||ch[ch.length-1])[1]};
+const collLabel={abaya:'العبايات',isdal:'الإسدالات',burkini:'البوركيني'};
+const CHART_URL='https://i.postimg.cc/wTfX4ZhR/Whats-App-Image-2026-06-13-at-7-46-01-PM.jpg';
+const sendChartImg=()=>bot('دي صورة بتوضح إزاي تقيسي نص محيط الصدر: حطي الشريط من تحت الإبط لتحت الإبط التاني وهو الموديل مفرود قدامك، وابعتيلي الرقم اللي طلعلك بالسم 🤍',null,CHART_URL);
+const nearestAvail=(sug,list)=>{if(!list.length)return sug;if(list.includes(sug))return sug;
+ const ord=['S','M','L','XL','XXL','XXXL'],i=ord.indexOf(sug);let best=list[0],bd=99;
+ list.forEach(s=>{const d=Math.abs(ord.indexOf(s)-i);if(d<bd){bd=d;best=s}});return best};
 let flow=null;const YES=/^(ايوه|ايوا|اه|اكد|تاكيد|موافق|تمام|اوكي|ok|yes)/,ORDER=/اطلب|اشتري|هاخد|احجز|عايزه اخد|اوردر|طلب جديد|اتمام|اكمل|ضيف/;
 const provOpts=()=>[...$('checkoutProvince').options];
 const feeOf=v=>+((provOpts().find(o=>o.value===v)||{dataset:{}}).dataset.fee||0);
@@ -2685,7 +2711,10 @@ function pick(p,r){flow={step:'color',p,color:null,size:null,qty:1,data:{},pre:r
 function setColor(c){if(!flow)return;flow.color=c;askSize()}
 function askSize(){if(!flow)return;const p=flow.p,list=szFor(p,flow.color),pre=((flow.pre||{}).sizes||[]).find(s=>list.includes(s));flow.pre=null;
  if(!list.length)return setSize('');if(pre)return setSize(pre);
- flow.step='size';bot(`${p.name} (كود ${p.code})${flow.color?' — لون '+flow.color:''} — ${p.price} ج.م\nمقاس حضرتك إيه؟ المتاح: ${list.join(' / ')}`,[...list.map(s=>[s,()=>setSize(s)]),['مش عارفة مقاسي',()=>{$('sizeGuideModal').classList.add('open')}]])}
+ flow.step='size';bot(`${p.name} (كود ${p.code})${flow.color?' — لون '+flow.color:''} — ${p.price} ج.م\nمقاس حضرتك إيه؟ المتاح: ${list.join(' / ')}`,[...list.map(s=>[s,()=>setSize(s)]),['مش عارفة مقاسي',()=>askChest()]])}
+function askChest(){if(!flow||!flow.p)return;flow.back={step:'size'};flow.step='sizehelp';flow.chType=typeOf(flow.p);
+ bot('قوليلي نص محيط الصدر بالسم (من تحت الإبط لتحت الإبط)، وهقولك المقاس المناسب. لو مش عارفة تقيسيه إزاي قوليلي "مش عارفة" وأبعتلك صورة توضح الطريقة 🤍')}
+function useSuggestion(sug){if(!flow||!flow.p)return;const list=szFor(flow.p,flow.color),fit=nearestAvail(sug,list);setSize(fit)}
 function setSize(s){if(!flow)return;flow.size=s;flow.step='qty';bot('كام قطعة يا فندم؟',[1,2,3].map(n=>[String(n),()=>setQty(n)]))}
 function setQty(n){if(!flow||!flow.p)return;const p=flow.p,c=flow.color,s=flow.size;
  const img=(c&&p.colorImages&&p.colorImages[c])?p.colorImages[c]:((p.images||[])[0]||'');
@@ -2712,9 +2741,13 @@ function flowIn(q){const t=q.trim(),n=nz(t),f=flow,d=f.data||{};
  case 'color':{const cs=colorsOf(f.p),c=cs.find(x=>CK(x)===CK(t))||cs.find(x=>CK(t)&&(CK(x).includes(CK(t))||CK(t).includes(CK(x))));
   return c?setColor(c):bot('اللون ده مش متاح للموديل ده. المتاح: '+cs.join('، '),cs.map(x=>[x,()=>setColor(x)]))}
  case 'size':{const list=szFor(f.p,f.color);
-  if(/مش عارف|مقاسي|مقاسات|دليل/.test(n)){$('sizeGuideModal').classList.add('open');return bot('فتحتلك دليل المقاسات يا فندم، وقوليلي مقاسك بعد ما تختاري 🤍')}
+  if(/مش عارف|مقاسي|مقاسات|دليل/.test(n))return askChest();
   const s=list.find(x=>x===t.toUpperCase().replace(/\s+/g,''))||parse(t).sizes.find(x=>list.includes(x));
   return s?setSize(s):bot('المقاس ده مش متاح للموديل ده يا فندم. المتاح: '+list.join(' / '),list.map(x=>[x,()=>setSize(x)]))}
+ case 'sizehelp':{if(/مش عارف|مش عرفه|لا اعرف/.test(n)){sendChartImg();return}
+  const nums=n.match(/\d{2,3}/g)||[];if(!nums.length)return bot('اكتبي الرقم بالسم بس، مثلاً 58. أو قوليلي "مش عارفة" وأبعتلك صورة توضح الطريقة 🤍');
+  const c=+nums[0],sug=suggestSize(f.chType,c),list=szFor(f.p,f.color),fit=nearestAvail(sug,list);
+  return bot(`على قياس ${c} سم، أنسب مقاس ليكي غالبًا ${sug}${fit!==sug?' (متاح عندنا بمقاس '+fit+' لنفس الموديل)':''} 🤍\nحضرتك عايزة تثبتي المقاس ده؟`,[[fit,()=>useSuggestion(sug)],...list.filter(x=>x!==fit).map(x=>[x,()=>setSize(x)])])}
  case 'qty':{const k=parseInt(n.replace(/\D/g,''))||0;return(k>=1&&k<=10)?setQty(k):bot('اكتبي عدد القطع بالأرقام (من 1 لـ 10) 🤍')}
  case 'more':if(/كمل|خلاص|كده|^لا|تمام|اوردر/.test(n))return startCheckout();f.step='model';return flowIn(t);
  case 'name':if(t.length<2)return bot('اكتبي الاسم يا فندم 🤍');d.name=t;f.step='phone';return bot('رقم الموبايل؟ (11 رقم)');
@@ -2727,6 +2760,11 @@ function flowIn(q){const t=q.trim(),n=nz(t),f=flow,d=f.data||{};
  case 'confirm':if(YES.test(n)&&t.length<=25&&!/بس|غير|عدل/.test(n))return submit();
   if(/^(لا|تعديل|الغاء)/.test(n))return editOrder();
   return bot('اكتبي "أيوه" لتأكيد الطلب أو اضغطي الزر يا فندم 🤍',[['تأكيد الطلب ✅',submit],['تعديل / إلغاء',editOrder]]);
+ case 'freetype':return;
+ case 'freehelp':{if(/مش عارف|مش عرفه|لا اعرف/.test(n)){sendChartImg();return}
+  const nums=n.match(/\d{2,3}/g)||[];if(!nums.length)return bot('اكتبي الرقم بالسم بس، مثلاً 58. أو قوليلي "مش عارفة" وأبعتلك صورة توضح الطريقة 🤍');
+  const c=+nums[0],sug=suggestSize(f.chType,c),t=f.chType;flow=null;
+  return bot(`على قياس ${c} سم في ${collLabel[t]}، أنسب مقاس ليكي غالبًا ${sug} 🤍`,[['شوفيلي موديلات مقاس '+sug,()=>{S.sizes=new Set([sug]);closeAI();sync();go('fxBar')}]])}
  default:flow=null}}
 const crit=r=>({season:r.season||'all',type:r.type||null,code:r.code||null,q:r.q||null,codeQ:'',sizes:new Set(r.sizes),colors:new Set(r.colors.map(CK)),min:r.min??null,max:r.max??null,avail:false});
 const line=p=>`• ${p.name} (كود ${p.code}) — ${p.price} ج.م${p.price_old&&p.price_old>p.price?` بدل ${p.price_old}`:''}`;
@@ -2748,7 +2786,7 @@ async function ask(q,fromNl){
  if(/شحن|توصيل/.test(n))return bot(feeTxt());
  if(/استبدال|استرجاع|ارجاع|مرتجع/.test(n))return bot(retTxt());
  if(/متابع|اتابع|طلبي|حاله/.test(n))return QA[3][1]();
- if(/مقاس/.test(n)&&!/xl|l|m/.test(n)){$('sizeGuideModal').classList.add('open');return bot('فتحتلك جدول المقاسات يا فندم 🤍')}
+ if(/مقاس/.test(n)&&!/xl|l|m/.test(n))return QA[2][1]();
  if(!AI_ENDPOINT)return bot('للسؤال ده أحسن حضرتك تكلمي خدمة العملاء وهيساعدوكي فورًا 🤍',[WA(q)]);
  const w=bot('ثواني يا فندم...');
  try{const res=await fetch(AI_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:hist.slice(-6),context:ctx()})});
@@ -2757,6 +2795,22 @@ async function ask(q,fromNl){
 $('aiForm').onsubmit=e=>{e.preventDefault();const v=$('aiIn').value.trim();if(!v)return;$('aiIn').value='';me(v);ask(v)};
 sync();
 })();
+</script>
+
+
+<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').catch(()=>{})});
+}
+let deferredInstall=null;
+window.addEventListener('beforeinstallprompt',e=>{
+  e.preventDefault();deferredInstall=e;
+  const b=document.createElement('button');
+  b.id='pwaInstallBtn';b.textContent='تثبيت التطبيق 📲';
+  b.style.cssText='position:fixed;left:16px;bottom:16px;z-index:59;background:#1a1814;color:#e9d9bd;border:1px solid #c9a96e;border-radius:999px;padding:.65rem 1.1rem;font-weight:800;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.25)';
+  b.onclick=async()=>{b.remove();if(deferredInstall){deferredInstall.prompt();await deferredInstall.userChoice;deferredInstall=null}};
+  document.body.appendChild(b);
+});
 </script>
 
 </body>
