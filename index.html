@@ -630,17 +630,44 @@ src="https://www.facebook.com/tr?id=3098759040331414&ev=PageView&noscript=1"
 #aiQuick .fx-btn{white-space:nowrap;font-size:.78rem;padding:.4rem .8rem}
 #aiForm{display:flex;gap:6px;padding:10px;border-top:1px solid var(--gold2)}
 #aiForm input{flex:1;min-width:0;padding:.6rem .8rem;border:1.5px solid var(--gold2);border-radius:12px;font:inherit}
+.fx-open{display:inline-flex;align-items:center;gap:6px;background:var(--brand);color:#fff;border-color:var(--gold);position:relative}
+.fx-badge{background:var(--gold);color:#1a1814;border-radius:999px;min-width:20px;height:20px;display:inline-grid;place-items:center;font-size:.72rem;padding:0 5px}
+#fxOv{position:fixed;inset:0;background:rgba(0,0,0,.42);z-index:69;opacity:0;pointer-events:none;transition:opacity .3s}
+#fxOv.open{opacity:1;pointer-events:auto}
+#fxDrawer{position:fixed;top:0;bottom:0;left:0;width:min(400px,92vw);z-index:70;background:#fffdf9;display:flex;flex-direction:column;box-shadow:var(--shadow);transform:translateX(-105%);transition:transform .3s}
+#fxDrawer.open{transform:none}
+.fx-dbody{flex:1;overflow-y:auto;padding:14px 16px}
+.fx-dfoot{padding:12px 16px;border-top:1px solid var(--gold2);background:#fffdf9}
+.fx-dfoot .fx-go{margin:0}
+#fxDrawer .fx-cats{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}
+#fxDrawer .fx-cat{flex:none}
+@media(max-width:600px){.fx-nl{flex-wrap:wrap}.fx-nl input{flex-basis:100%}.search-box input{width:140px}}
+.fx-nl{justify-content:flex-end}
 </style>
 
 <!-- ===== Finder ===== -->
 <section id="finder" class="section">
 <div class="container">
-  <div class="sec-head"><h2 class="sec-title">اكتشفي ستايلك مع عاليا ✨</h2></div>
-  <div class="fx-nl">
-    <input id="fxNl" placeholder="اكتبي اللي عايزاه: عايزة عباية سوداء مقاس XL أقل من 1000 جنيه">
-    <button class="btn gold" id="fxNlGo">ابحثي</button>
+  <div class="sec-head">
+    <h2 class="sec-title">اكتشفي ستايلك مع عاليا ✨</h2>
+    <div class="search-box">
+      <input id="fxCode" placeholder="ابحث بكود الموديل...">
+      <button class="btn" id="fxCodeGo">بحث</button>
+      <button class="btn ghost" id="fxCodeClr">مسح</button>
+    </div>
   </div>
-  <div class="fx-panel">
+  <div class="fx-nl">
+    <button class="fx-btn fx-open" id="fxOpen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg> تصفية <span id="fxBadge" class="fx-badge" style="display:none"></span></button>
+  </div>
+  <div class="fx-chips" id="fxChips"></div>
+  <div class="fx-bar" id="fxBar"><div id="fxCount"></div></div>
+  <div class="grid products" id="fxResults"><div class="fx-sk"></div><div class="fx-sk"></div><div class="fx-sk"></div><div class="fx-sk"></div></div>
+</div>
+</section>
+<div id="fxOv"></div>
+<aside id="fxDrawer" aria-label="تصفية المنتجات">
+  <div class="ai-h"><span>🤍 تصفية الموديلات</span><button id="fxShut" aria-label="إغلاق">✕</button></div>
+  <div class="fx-dbody">
     <div class="fx-seasons" id="fxSeasons"></div>
     <div class="fx-label">القسم</div><div class="fx-cats" id="fxCats"></div>
     <div class="fx-label">المقاس</div><div class="fx-pills" id="fxSizes"></div>
@@ -649,18 +676,11 @@ src="https://www.facebook.com/tr?id=3098759040331414&ev=PageView&noscript=1"
     <div class="fx-range"><div class="fx-track" id="fxTrack"></div><input type="range" id="fxMin"><input type="range" id="fxMax"></div>
     <div class="fx-quick" id="fxQuick"></div>
     <div class="fx-manual"><input type="number" id="fxMinN" placeholder="من (ج.م)" inputmode="numeric"><input type="number" id="fxMaxN" placeholder="إلى (ج.م)" inputmode="numeric"></div>
-    <div class="fx-row">
-      <label><input type="checkbox" id="fxAvail"> المتاحة فقط</label>
-      <span id="fxSort" class="fx-quick"></span>
-      <button class="fx-btn" id="fxClear">مسح الفلاتر</button>
-    </div>
-    <button class="btn gold fx-go" id="fxGo">اعرضيلي الموديلات المناسبة 🤍</button>
+    <div class="fx-row"><label><input type="checkbox" id="fxAvail"> المتاحة فقط</label><button class="fx-btn" id="fxClear">مسح الفلاتر</button></div>
+    <div class="fx-label">الترتيب</div><div id="fxSort" class="fx-quick"></div>
   </div>
-  <div class="fx-chips" id="fxChips" style="margin-top:12px"></div>
-  <div class="fx-bar" id="fxBar"><div id="fxCount"></div><div class="fx-quick"><button class="fx-btn on" id="fxGrid">▦ شبكة</button><button class="fx-btn" id="fxList">☰ قائمة</button></div></div>
-  <div class="grid products" id="fxResults"><div class="fx-sk"></div><div class="fx-sk"></div><div class="fx-sk"></div><div class="fx-sk"></div></div>
-</div>
-</section>
+  <div class="fx-dfoot"><button class="btn gold fx-go" id="fxGo">اعرضيلي الموديلات المناسبة 🤍</button></div>
+</aside>
 
 <!-- ===== AI Assistant ===== -->
 <button id="aiFab">مساعد عاليا 🤍</button>
@@ -1644,6 +1664,8 @@ function sendOrderWhatsApp(){
   lines.push('👤 الاسم: '+lastOrder.name);
   lines.push('📱 الهاتف: '+lastOrder.phone);
   lines.push('📍 العنوان: '+lastOrder.address+(lastOrder.city?'، '+lastOrder.city:'')+'، '+lastOrder.province);
+  if(lastOrder.notes)lines.push('📝 ملاحظات: '+lastOrder.notes);
+  if(lastOrder.via)lines.push('🤖 الطلب من مساعد عاليا');
   lines.push('');
   lines.push('🛍️ المنتجات:');
   (lastOrder.products||[]).forEach(p=>{
@@ -2482,33 +2504,38 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const nz=s=>String(s||'').replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/[\u064B-\u0652]/g,'').toLowerCase();
 const SEASONS={summer:'☀️ الصيفي',winter:'❄️ الشتوي'}; // أي كولكشن جديد بيظهر تلقائيًا باسمه
 const TYPES=[['suit','سوت وأطقم',/سوت|طقم/],['isdal','إسدالات',/اسدال/],['cardi','كاردي',/كاردي/],['gilet','جيليه',/جيليه/],['hoodie','هودي',/هودي/],['shemiz','شميز',/شميز/],['coat','جاكت وبالطو',/بالطو|جاكت|جاكيت|كوت|ترانش/],['dress','دريس',/دريس/],['abaya','عبايات',/عباي/],['basic','بيزك',/بيزك/]];
-const HEX={'اسود':'#1a1814','ابيض':'#f4f1ea','بيج':'#d9c3a3','كحلي':'#1f2a5a','بني':'#6d4c41','زيتي':'#4f5b2e','زيتوني':'#6b7a2a','رمادي':'#8a8d91','رصاصي':'#8a8d91','نبيتي':'#6d1f3a','بردقاني':'#e59a4a','تيراكوتا':'#c66a4a','بترولي':'#1d5f6b','موف':'#9b7fb5','كاميل':'#c19a6b','سيلستي':'#9cc3e6','اخضر':'#3f7d4e','احمر':'#b3261e','ازرق':'#2980b9','وردي':'#e08fa6'};
-const S={season:'all',type:null,sizes:new Set(),colors:new Set(),min:null,max:null,avail:false,sort:'new',view:'grid',code:null,q:null};
+const HEX={'بشره':'#e3bfa0','خمري':'#7a2333','جملي':'#b98a5b','فيروزي':'#2bb5b0','سماوي':'#87ceeb','لبني':'#cfe3f3','عنابي':'#6d1f3a','كافيه':'#8b6b4a','اوف وايت':'#f0ebe0','اصفر':'#e6c84a','اسود':'#1a1814','ابيض':'#f4f1ea','بيج':'#d9c3a3','كحلي':'#1f2a5a','بني':'#6d4c41','زيتي':'#4f5b2e','زيتوني':'#6b7a2a','رمادي':'#8a8d91','رصاصي':'#8a8d91','نبيتي':'#6d1f3a','بردقاني':'#e59a4a','تيراكوتا':'#c66a4a','بترولي':'#1d5f6b','موف':'#9b7fb5','كاميل':'#c19a6b','سيلستي':'#9cc3e6','اخضر':'#3f7d4e','احمر':'#b3261e','ازرق':'#2980b9','وردي':'#e08fa6'};
+const S={season:'all',type:null,sizes:new Set(),colors:new Set(),min:null,max:null,avail:false,sort:'new',view:'grid',code:null,codeQ:'',q:null};let DISP=new Map();
 const typeOf=p=>{const n=nz(p.name);for(const t of TYPES)if(t[2].test(n))return t[0];return 'other'};
 const tLabel=k=>(TYPES.find(t=>t[0]===k)||[0,'موديلات أخرى'])[1];
 const colorsOf=p=>p.hasColors?Object.keys(p.colorSizes||{}):[];
-const sizesOf=(p,cols)=>{if(!p.hasColors)return p.sizes||[];return [...new Set(colorsOf(p).filter(c=>!cols||!cols.size||cols.has(c)).flatMap(c=>p.colorSizes[c]||[]))]};
+const CK=c=>nz(c).replace(/\s+/g,' ').trim();
+const NS=a=>[...new Set((a||[]).flatMap(s=>String(s).toUpperCase().split(/[.,،\/\\+\-\s]+/)).map(s=>s.trim()).filter(Boolean).map(s=>({'2XL':'XXL','3XL':'XXXL'}[s]||s)))];
+const sizesOf=(p,cols)=>NS(!p.hasColors?p.sizes:colorsOf(p).filter(c=>!cols||!cols.size||cols.has(CK(c))).flatMap(c=>p.colorSizes[c]||[]));
 const avail=p=>p.soldOut!==true&&sizesOf(p).length>0;
 const SO=['S','M','L','XL','XXL','XXXL','1','2','3'];
 const sortSz=a=>a.sort((x,y)=>(SO.indexOf(x)+1||99)-(SO.indexOf(y)+1||99));
 const seasonOk=p=>S.season==='all'||p.category===S.season;
 const baseList=()=>products.filter(p=>seasonOk(p)&&(!S.type||typeOf(p)===S.type));
-function match(p){
- if(!seasonOk(p))return false;
- if(S.type&&typeOf(p)!==S.type)return false;
- if(S.code&&String(p.code)!==S.code)return false;
- if(S.q&&!nz(p.name+' '+(p.desc||'')).includes(S.q))return false;
- if(S.colors.size&&!colorsOf(p).some(c=>S.colors.has(c)))return false;
- if(S.sizes.size&&!sizesOf(p,S.colors).some(s=>S.sizes.has(s)))return false;
- if(S.min!=null&&p.price<S.min)return false;
- if(S.max!=null&&p.price>S.max)return false;
- if(S.avail&&!avail(p))return false;
+function matchWith(p,C){
+ if(C.season&&C.season!=='all'&&p.category!==C.season)return false;
+ if(C.type&&typeOf(p)!==C.type)return false;
+ if(C.code&&String(p.code)!==C.code)return false;
+ if(C.codeQ&&!String(p.code||'').toUpperCase().includes(C.codeQ))return false;
+ if(C.q&&!nz(p.name+' '+(p.desc||'')).includes(C.q))return false;
+ if(C.colors.size&&!colorsOf(p).some(c=>C.colors.has(CK(c))))return false;
+ if(C.sizes.size&&!sizesOf(p,C.colors).some(s=>C.sizes.has(s)))return false;
+ if(C.min!=null&&p.price<C.min)return false;
+ if(C.max!=null&&p.price>C.max)return false;
+ if(C.avail&&!avail(p))return false;
  return true}
+const match=p=>matchWith(p,S);
 const results=()=>{const r=products.filter(match);
  if(S.sort==='asc')r.sort((a,b)=>a.price-b.price);else if(S.sort==='desc')r.sort((a,b)=>b.price-a.price);else r.sort((a,b)=>b.id-a.id);return r};
 const go=id=>{const e=$(id);if(e)e.scrollIntoView({behavior:'smooth',block:'start'})};
 const toggle=(set,v)=>{set.has(v)?set.delete(v):set.add(v);sync()};
-const swBg=c=>{const h=c.split('/').map(x=>HEX[nz(x).trim()]||'#c9a96e');return h.length>1?`linear-gradient(135deg,${h[0]} 50%,${h[1]} 50%)`:h[0]};
+const hx=x=>{x=nz(x).trim();if(HEX[x])return HEX[x];for(const k in HEX)if(x.includes(k))return HEX[k];return '#c9a96e'};
+const swBg=c=>{const h=c.split('/').map(hx);return h.length>1?`linear-gradient(135deg,${h[0]} 50%,${h[1]} 50%)`:h[0]};
 
 function sync(){
  if(!products||!products.length)return;
@@ -2522,9 +2549,9 @@ function sync(){
  // sizes & colors available in current season+type
  const base=baseList(),sz=sortSz([...new Set([...base.flatMap(p=>sizesOf(p)),...S.sizes])]);
  $('fxSizes').innerHTML=sz.map(s=>{const ok=base.some(p=>sizesOf(p).includes(s));return `<button class="fx-btn ${S.sizes.has(s)?'on':''}" data-z="${esc(s)}" ${ok?'':'disabled'}>${esc(s)}</button>`}).join('')||'<span class="muted">—</span>';
- const cl=[...new Set([...base.flatMap(colorsOf),...S.colors])];
- $('fxColors').innerHTML=cl.map(c=>`<button class="fx-sw ${S.colors.has(c)?'on':''}" data-c="${esc(c)}" title="${esc(c)}" style="background:${swBg(c)}"></button>`).join('')||'<span class="muted">الموديلات في القسم ده مالهاش ألوان مسجّلة</span>';
- $('fxColorName').textContent=[...S.colors].join('، ');
+ const dm=new Map();base.flatMap(colorsOf).forEach(c=>{if(!dm.has(CK(c)))dm.set(CK(c),c)});S.colors.forEach(k=>{if(!dm.has(k))dm.set(k,k)});DISP=dm;
+ $('fxColors').innerHTML=[...dm].map(([k,c])=>`<button class="fx-sw ${S.colors.has(k)?'on':''}" data-c="${esc(k)}" title="${esc(c)}" style="background:${swBg(c)}"></button>`).join('')||'<span class="muted">الموديلات في القسم ده مالهاش ألوان مسجّلة</span>';
+ $('fxColorName').textContent=[...S.colors].map(k=>DISP.get(k)||k).join('، ');
  // price
  const pr=products.map(p=>p.price),lo=Math.floor(Math.min(...pr)/50)*50,hi=Math.ceil(Math.max(...pr)/50)*50;
  const a=Math.max(lo,S.min??lo),b=Math.min(hi,S.max??hi);
@@ -2535,25 +2562,27 @@ function sync(){
  $('fxQuick').innerHTML=[[null,499,'أقل من 500'],[500,750,'500–750'],[750,1000,'750–1000'],[1000,1500,'1000–1500'],[1501,null,'أكثر من 1500']].map(([x,y,l])=>`<button class="fx-btn ${S.min===x&&S.max===y?'on':''}" data-p="${x??''},${y??''}">${l}</button>`).join('');
  $('fxSort').innerHTML=[['new','الأحدث'],['asc','السعر ↑'],['desc','السعر ↓']].map(([k,l])=>`<button class="fx-btn ${S.sort===k?'on':''}" data-o="${k}">${l}</button>`).join('');
  $('fxAvail').checked=S.avail;
- $('fxGrid').classList.toggle('on',S.view==='grid');$('fxList').classList.toggle('on',S.view==='list');
  chips();render();
 }
 function chips(){
  const c=[];
  if(S.season!=='all')c.push([SEASONS[S.season]||S.season,()=>S.season='all']);
  if(S.type)c.push([tLabel(S.type),()=>S.type=null]);
- S.colors.forEach(x=>c.push([x,()=>S.colors.delete(x)]));
+ S.colors.forEach(x=>c.push([DISP.get(x)||x,()=>S.colors.delete(x)]));
  S.sizes.forEach(x=>c.push(['مقاس '+x,()=>S.sizes.delete(x)]));
  if(S.min!=null||S.max!=null)c.push([(S.min!=null?'من '+S.min+' ':'')+(S.max!=null?'حتى '+S.max:'')+' ج',()=>{S.min=S.max=null}]);
  if(S.code)c.push(['كود '+S.code,()=>S.code=null]);
+ if(S.codeQ)c.push(['كود '+S.codeQ,()=>{S.codeQ='';$('fxCode').value=''}]);
+ $('fxBadge').textContent=c.length;$('fxBadge').style.display=c.length?'':'none';
  if(S.q)c.push(['«'+S.q+'»',()=>S.q=null]);
  const w=$('fxChips');w.innerHTML=c.map((x,i)=>`<button class="fx-chip" data-x="${i}">${esc(x[0])} ✕</button>`).join('');
  w.onclick=e=>{const b=e.target.closest('[data-x]');if(b){c[b.dataset.x][1]();sync()}};
 }
 function render(){
  const r=results(),box=$('fxResults');
+ $('fxGo').textContent='اعرضيلي الموديلات المناسبة 🤍'+(r.length?' ('+r.length+')':'');
  $('fxCount').textContent=r.length?`لقينا لحضرتك ${r.length} موديل مناسب لذوقك 🤍`:'';
- box.className='grid products'+(S.view==='list'?' list':'');
+ box.className='grid products';
  if(!r.length){box.innerHTML=`<div class="fx-empty"><h3>ملقيناش موديلات بالمواصفات دي حاليًا</h3><p class="muted">ممكن نوسّع السعر أو نجرب لون تاني؟ 🤍</p><div class="fx-quick" style="justify-content:center"><button class="fx-btn" data-e="price">وسّعي السعر</button><button class="fx-btn" data-e="color">امسحي اللون</button><button class="fx-btn" data-e="all">امسحي كل الفلاتر</button></div></div>`;return}
  box.innerHTML=r.map((p,i)=>{const ix=products.indexOf(p),img=(p.images||[])[0]||'',old=p.price_old&&p.price_old>p.price;
   const cs=colorsOf(p),sz=sortSz(sizesOf(p).slice());
@@ -2566,7 +2595,7 @@ window.fxAdd=i=>{const p=products[i],sz=sizesOf(p);
  saveCart();updateCartUI();$('cartDrawer').classList.add('open');$('overlay').style.display='block'};
 
 // ---- events ----
-$('finder').addEventListener('click',e=>{
+const fxClick=e=>{
  const t=e.target.closest('button');if(!t)return;const d=t.dataset;
  if(d.s!==undefined){S.season=d.s;S.type=null;sync()}
  else if(d.t!==undefined){S.type=d.t||null;sync()}
@@ -2575,12 +2604,19 @@ $('finder').addEventListener('click',e=>{
  else if(d.p){const[a,b]=d.p.split(',');S.min=a===''?null:+a;S.max=b===''?null:+b;sync()}
  else if(d.o){S.sort=d.o;sync()}
  else if(d.e){if(d.e==='price')S.min=S.max=null;else if(d.e==='color')S.colors.clear();else clearAll();sync()}
-});
-const clearAll=()=>{S.type=null;S.sizes.clear();S.colors.clear();S.min=S.max=null;S.avail=false;S.code=null;S.q=null};
-$('fxClear').onclick=()=>{clearAll();$('fxNl').value='';sync()};
+};
+$('finder').addEventListener('click',fxClick);$('fxDrawer').addEventListener('click',fxClick);
+const clearAll=()=>{S.type=null;S.sizes.clear();S.colors.clear();S.min=S.max=null;S.avail=false;S.code=null;S.codeQ='';S.q=null;if($('fxCode'))$('fxCode').value=''};
+$('fxClear').onclick=()=>{clearAll();sync()};
 $('fxAvail').onchange=e=>{S.avail=e.target.checked;sync()};
-$('fxGrid').onclick=()=>{S.view='grid';sync()};$('fxList').onclick=()=>{S.view='list';sync()};
-$('fxGo').onclick=()=>{sync();go('fxBar')};
+const drawer=on=>{$('fxDrawer').classList.toggle('open',on);$('fxOv').classList.toggle('open',on);document.body.style.overflow=on?'hidden':''};
+$('fxOpen').onclick=()=>drawer(!$('fxDrawer').classList.contains('open'));$('fxShut').onclick=()=>drawer(false);$('fxOv').onclick=()=>drawer(false);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')drawer(false)});
+$('fxGo').onclick=()=>{sync();drawer(false);setTimeout(()=>go('fxBar'),60)};
+$('fxCode').oninput=e=>{S.codeQ=e.target.value.trim().toUpperCase();sync()};
+$('fxCodeGo').onclick=()=>{S.codeQ=$('fxCode').value.trim().toUpperCase();sync();if(S.codeQ&&!results().length)alert('لم يُعثر على موديل بهذا الكود');else go('fxBar')};
+$('fxCode').onkeydown=e=>{if(e.key==='Enter')$('fxCodeGo').onclick()};
+$('fxCodeClr').onclick=()=>{S.codeQ='';$('fxCode').value='';sync()};
 const rng=()=>{let a=+$('fxMin').value,b=+$('fxMax').value;if(a>b)[a,b]=[b,a];S.min=a;S.max=b;sync()};
 $('fxMin').oninput=rng;$('fxMax').oninput=rng;
 $('fxMinN').onchange=e=>{S.min=e.target.value===''?null:+e.target.value;sync()};
@@ -2610,9 +2646,7 @@ function parse(t){
  if(mat)r.q=mat[0];
  r.sizes=[...new Set(r.sizes)];return r}
 const has=r=>r.season||r.type||r.sizes.length||r.colors.length||r.min!=null||r.max!=null||r.code||r.q;
-function apply(r){const s=r.season||S.season;clearAll();S.season=s;S.type=r.type||null;r.sizes.forEach(x=>S.sizes.add(x));r.colors.forEach(x=>S.colors.add(x));S.min=r.min??null;S.max=r.max??null;S.code=r.code||null;S.q=r.q||null;sync()}
-const nlGo=()=>{const v=$('fxNl').value.trim();if(!v)return;const r=parse(v);if(has(r)){apply(r);go('fxBar')}else{openAI();ask(v,true)}};
-$('fxNlGo').onclick=nlGo;$('fxNl').onkeydown=e=>{if(e.key==='Enter')nlGo()};
+function apply(r){const s=r.season||S.season;clearAll();S.season=s;S.type=r.type||null;r.sizes.forEach(x=>S.sizes.add(x));r.colors.forEach(x=>S.colors.add(CK(x)));S.min=r.min??null;S.max=r.max??null;S.code=r.code||null;S.q=r.q||null;sync()}
 
 // ---- Assistant ----
 const hist=[];
@@ -2626,18 +2660,94 @@ const WA=m=>['كلّمي خدمة العملاء واتساب',()=>openWhatsApp(
 function openAI(){$('aiPanel').classList.add('open');if(!$('aiMsgs').children.length){bot('أهلاً بحضرتك في عاليا فاشون 🤍\nأنا مساعدتك الذكية، أقدر أساعدك تختاري الموديل المناسب، تعرفي تفاصيل المنتجات أو تعملي أوردر بسهولة.')}}
 const closeAI=()=>$('aiPanel').classList.remove('open');
 $('aiFab').onclick=()=>$('aiPanel').classList.contains('open')?closeAI():openAI();$('aiClose').onclick=closeAI;
-const QA=[['اكتشفي ستايلك ✨',()=>{closeAI();go('finder')}],['البحث عن موديل',()=>{closeAI();go('finder');$('fxNl').focus()}],['ساعديني أختار مقاسي',()=>{closeAI();$('sizeGuideModal').classList.add('open')}],
+const QA=[['اكتشفي ستايلك ✨',()=>{closeAI();go('finder')}],['البحث عن موديل',()=>{closeAI();go('finder');$('fxCode').focus()}],['ساعديني أختار مقاسي',()=>{closeAI();$('sizeGuideModal').classList.add('open')}],
 ['متابعة أوردر',()=>bot('متابعة الأوردر بتتم عن طريق خدمة العملاء عشان نتأكد من بياناتك الأول. ابعتيلهم رقم الطلب ورقم الموبايل اللي سجلتيه.',[WA('عايزة أتابع أوردر — رقم الطلب: ')])],
 ['الشحن والاستبدال',()=>bot(feeTxt()+'\n\nالاستبدال والاسترجاع:\n'+retTxt())],
-['إتمام طلب',()=>{if(!cart.length){bot('السلة فاضية يا فندم. اختاري الموديل اللي عاجبك وأنا معاكي 🤍',[['اعرضي الموديلات',()=>{closeAI();go('finder')}]]);return}closeAI();$('cartDrawer').classList.add('open');$('overlay').style.display='block'}]];
+['إتمام طلب',()=>{flow=null;cart.length?startCheckout():askModel()}]];
 $('aiQuick').innerHTML='';QA.forEach(([l,f])=>{const b=document.createElement('button');b.className='fx-btn';b.textContent=l;b.onclick=()=>{openAI();f()};$('aiQuick').appendChild(b)});
 const ctx=()=>({catalog:products.map(p=>[p.code,p.name,p.price,p.price_old||'',SEASONS[p.category]||p.category,tLabel(typeOf(p)),colorsOf(p).join('/'),sortSz(sizesOf(p).slice()).join('/'),(p.desc||'').slice(0,80)].join('|')).join('\n').slice(0,9000),shipping:feeTxt(),returns:retTxt(),about:settings.about||''});
+
+let flow=null;const YES=/^(ايوه|ايوا|اه|اكد|تاكيد|موافق|تمام|اوكي|ok|yes)/,ORDER=/اطلب|اشتري|هاخد|احجز|عايزه اخد|اوردر|طلب جديد|اتمام|اكمل|ضيف/;
+const provOpts=()=>[...$('checkoutProvince').options];
+const feeOf=v=>+((provOpts().find(o=>o.value===v)||{dataset:{}}).dataset.fee||0);
+const szFor=(p,c)=>NS(p.hasColors?(p.colorSizes[c]||[]):p.sizes);
+const cancelBtn=['إلغاء الطلب',()=>{flow=null;bot('تمام يا فندم، اتلغى الطلب والسلة زي ما هي 🤍')}];
+const askModel=()=>{flow={step:'model'};bot('تمام يا فندم 🤍 ابعتيلي كود الموديل اللي عايزاه (أو اسمه).',[cancelBtn])};
+function orderIntent(r,hits){
+ if(hits.length===1)return pick(hits[0],r);
+ if(hits.length>1&&hits.length<=6)return bot('تحبي أنهي موديل؟',hits.map(p=>[p.code+' — '+p.name+' ('+p.price+' ج)',()=>pick(p,r)]));
+ if(cart.length&&!has(r))return startCheckout();
+ askModel()}
+function pick(p,r){flow={step:'color',p,color:null,size:null,qty:1,data:{},pre:r};
+ if(p.hasColors){const cs=colorsOf(p),pre=(r.colors||[]).find(c=>cs.includes(c));if(pre)return setColor(pre);
+  return bot(`${p.name} (كود ${p.code}) — ${p.price} ج.م\nأنهي لون حضرتك؟ المتاح: ${cs.join('، ')}`,[...cs.map(c=>[c,()=>setColor(c)]),cancelBtn])}
+ setColor(null)}
+function setColor(c){if(!flow)return;flow.color=c;askSize()}
+function askSize(){if(!flow)return;const p=flow.p,list=szFor(p,flow.color),pre=((flow.pre||{}).sizes||[]).find(s=>list.includes(s));flow.pre=null;
+ if(!list.length)return setSize('');if(pre)return setSize(pre);
+ flow.step='size';bot(`${p.name} (كود ${p.code})${flow.color?' — لون '+flow.color:''} — ${p.price} ج.م\nمقاس حضرتك إيه؟ المتاح: ${list.join(' / ')}`,[...list.map(s=>[s,()=>setSize(s)]),['مش عارفة مقاسي',()=>{$('sizeGuideModal').classList.add('open')}]])}
+function setSize(s){if(!flow)return;flow.size=s;flow.step='qty';bot('كام قطعة يا فندم؟',[1,2,3].map(n=>[String(n),()=>setQty(n)]))}
+function setQty(n){if(!flow||!flow.p)return;const p=flow.p,c=flow.color,s=flow.size;
+ const img=(c&&p.colorImages&&p.colorImages[c])?p.colorImages[c]:((p.images||[])[0]||'');
+ const ex=cart.find(x=>x.id===p.id&&(x.color||null)===(c||null)&&x.size===s);
+ if(ex)ex.qty=(ex.qty||1)+n;else cart.push({id:p.id,code:p.code,name:p.name,price:p.price,img,color:c||null,size:s,qty:n});
+ saveCart();updateCartUI();flow.step='more';
+ bot(`تمت إضافة ${p.name}${c?' — '+c:''}${s?' — مقاس '+s:''} × ${n} للسلة ✅`,[['أكمّل الطلب',startCheckout],['أضيف موديل تاني',askModel]])}
+function startCheckout(){if(!cart.length)return askModel();flow={step:'name',data:{}};bot('تمام، هنكمّل الطلب. اسم حضرتك إيه؟',[cancelBtn])}
+const provBtns=()=>['الشرقية','القاهرة','الجيزة','الإسكندرية','الدقهلية','الغربية'].map(v=>[v,()=>flowIn(v)]);
+function summary(){const d=flow.data,sub=cart.reduce((a,b)=>a+b.price*(b.qty||1),0),fe=feeOf(d.province);flow.step='confirm';
+ bot(`مراجعة الطلب:\n${cart.map(i=>`• ${i.name} [${i.code}] — ${i.color||'—'} / ${i.size||'—'} × ${i.qty||1} = ${i.price*(i.qty||1)} ج`).join('\n')}\n\nالاسم: ${d.name}\nالموبايل: ${d.phone}\nالعنوان: ${d.address}، ${d.city}، ${d.province}${d.notes?'\nملاحظات: '+d.notes:''}\n\nالمنتجات: ${sub} ج.م\nالشحن: ${fe} ج.م\nالإجمالي: ${sub+fe} ج.م (الدفع عند الاستلام)\n\nهل حضرتك تأكدي الطلب؟`,[['تأكيد الطلب ✅',submit],['تعديل / إلغاء',editOrder]])}
+function editOrder(){if(!flow)return;bot('تمام يا فندم، عايزة تعملي إيه؟',[['أكتب بيانات الشحن من الأول',()=>{flow={step:'name',data:{}};bot('اسم حضرتك إيه؟')}],['أفتح السلة وأعدّل',()=>{flow=null;closeAI();$('cartDrawer').classList.add('open');$('overlay').style.display='block'}],cancelBtn])}
+function submit(){if(!flow||flow.step!=='confirm')return;const d=flow.data,sub=cart.reduce((a,b)=>a+b.price*(b.qty||1),0),fe=feeOf(d.province);flow.step='done';
+ const order={id:Date.now(),createdAt:new Date().toLocaleString('ar-EG'),name:d.name,phone:d.phone,province:d.province,city:d.city,address:d.address,notes:d.notes||'',via:'assistant',shippingFee:fe,products:JSON.parse(JSON.stringify(cart)),subtotal:sub,total:sub+fe,status:'new'};
+ orders.push(order);saveOrders();lastOrder=order;flow=null;closeAI();showThankYou(order);setTimeout(()=>sendOrderWhatsApp(),1000);cart=[];updateCartUI();
+ if($('ordersModal').classList.contains('open'))renderOrdersTable()}
+function flowIn(q){const t=q.trim(),n=nz(t),f=flow,d=f.data||{};
+ if(/^(الغاء|كنسل|خروج)/.test(n)){flow=null;return bot('تمام يا فندم، اتلغى الطلب والسلة زي ما هي 🤍')}
+ switch(f.step){
+ case 'model':{const r=parse(t),hits=has(r)?products.filter(p=>matchWith(p,crit(r))):[];
+  if(hits.length===1)return pick(hits[0],r);
+  if(hits.length>1&&hits.length<=6)return bot('تحبي أنهي موديل؟',hits.map(p=>[p.code+' — '+p.name,()=>pick(p,r)]));
+  return bot('مالقيتش الموديل ده، ابعتيلي الكود بالظبط أو اسم الموديل 🤍',[cancelBtn])}
+ case 'color':{const cs=colorsOf(f.p),c=cs.find(x=>CK(x)===CK(t))||cs.find(x=>CK(t)&&(CK(x).includes(CK(t))||CK(t).includes(CK(x))));
+  return c?setColor(c):bot('اللون ده مش متاح للموديل ده. المتاح: '+cs.join('، '),cs.map(x=>[x,()=>setColor(x)]))}
+ case 'size':{const list=szFor(f.p,f.color);
+  if(/مش عارف|مقاسي|مقاسات|دليل/.test(n)){$('sizeGuideModal').classList.add('open');return bot('فتحتلك دليل المقاسات يا فندم، وقوليلي مقاسك بعد ما تختاري 🤍')}
+  const s=list.find(x=>x===t.toUpperCase().replace(/\s+/g,''))||parse(t).sizes.find(x=>list.includes(x));
+  return s?setSize(s):bot('المقاس ده مش متاح للموديل ده يا فندم. المتاح: '+list.join(' / '),list.map(x=>[x,()=>setSize(x)]))}
+ case 'qty':{const k=parseInt(n.replace(/\D/g,''))||0;return(k>=1&&k<=10)?setQty(k):bot('اكتبي عدد القطع بالأرقام (من 1 لـ 10) 🤍')}
+ case 'more':if(/كمل|خلاص|كده|^لا|تمام|اوردر/.test(n))return startCheckout();f.step='model';return flowIn(t);
+ case 'name':if(t.length<2)return bot('اكتبي الاسم يا فندم 🤍');d.name=t;f.step='phone';return bot('رقم الموبايل؟ (11 رقم)');
+ case 'phone':{const ph=n.replace(/[\s-]/g,'');if(!/^\d{11}$/.test(ph))return bot('رقم الموبايل لازم يكون 11 رقم يا فندم، اكتبيه تاني 🤍');d.phone=ph;f.step='province';return bot('المحافظة إيه؟',provBtns())}
+ case 'province':{const o=provOpts().find(o=>nz(o.value)===n)||(n.length>2?provOpts().find(o=>n.includes(nz(o.value))||nz(o.value).includes(n)):null);
+  if(!o)return bot('المحافظة دي مش في قايمة الشحن عندنا، اكتبيها تاني أو اختاري:',provBtns());d.province=o.value;f.step='city';return bot('المنطقة أو المدينة؟')}
+ case 'city':d.city=t;f.step='address';return bot('العنوان بالتفصيل (الشارع، رقم العمارة، الدور...)؟');
+ case 'address':if(t.length<5)return bot('اكتبي العنوان بالتفصيل يا فندم 🤍');d.address=t;f.step='notes';return bot('في ملاحظات إضافية؟ لو مفيش اكتبي "مفيش".',[['مفيش',()=>flowIn('مفيش')]]);
+ case 'notes':d.notes=/^(مفيش|مافيش|لا)$/.test(n)?'':t;return summary();
+ case 'confirm':if(YES.test(n)&&t.length<=25&&!/بس|غير|عدل/.test(n))return submit();
+  if(/^(لا|تعديل|الغاء)/.test(n))return editOrder();
+  return bot('اكتبي "أيوه" لتأكيد الطلب أو اضغطي الزر يا فندم 🤍',[['تأكيد الطلب ✅',submit],['تعديل / إلغاء',editOrder]]);
+ default:flow=null}}
+const crit=r=>({season:r.season||'all',type:r.type||null,code:r.code||null,q:r.q||null,codeQ:'',sizes:new Set(r.sizes),colors:new Set(r.colors.map(CK)),min:r.min??null,max:r.max??null,avail:false});
+const line=p=>`• ${p.name} (كود ${p.code}) — ${p.price} ج.م${p.price_old&&p.price_old>p.price?` بدل ${p.price_old}`:''}`;
+const openModel=p=>{closeAI();openProductOptions(products.indexOf(p))};
 async function ask(q,fromNl){
+ if(flow)return flowIn(q);
  hist.push({role:'user',content:q});const n=nz(q),r=parse(q);
- if(has(r)&&!/كام|ايه|هل|ازاي|الخامه|ليه/.test(n)){apply(r);const c=results().length;go('fxBar');return bot(c?`تمام يا فندم، ظبطتلك الفلاتر ولقينا ${c} موديل مناسب 🤍 تقدري تعدّلي أي اختيار بنفسك.`:'ملقيناش موديلات بالمواصفات دي حاليًا، ممكن نوسّع السعر أو نجرب لون تاني؟ 🤍')}
+ const hits=has(r)?products.filter(p=>matchWith(p,crit(r))):[];
+ if(ORDER.test(n)&&!/متابع|اتابع|طلبي|صور|شكل/.test(n))return orderIntent(r,hits);
+ if(/صور|شكل/.test(n)){
+  if(hits.length===1){openModel(hits[0]);return bot('فتحتلك صور الموديل يا فندم 🤍')}
+  if(hits.length>1&&hits.length<=6)return bot('تقصدي أنهي موديل؟',hits.map(p=>[p.code+' — '+p.name,()=>openModel(p)]));
+  return bot('ابعتيلي كود الموديل أو اسمه وأفتحلك صوره 🤍')}
+ if(has(r)&&!/ايه|هل|ازاي|الخامه|ليه/.test(n)){
+  if(!hits.length)return bot('ملقيناش موديلات بالمواصفات دي حاليًا، ممكن نوسّع السعر أو نجرب لون تاني؟ 🤍');
+  const ps=hits.map(p=>p.price),lo=Math.min(...ps),hi=Math.max(...ps),top=hits.slice().sort((a,b)=>a.price-b.price).slice(0,5);
+  return bot((hits.length>1?`لقينا ${hits.length} موديل، الأسعار من ${lo} لـ ${hi} ج.م:\n`:'')+top.map(line).join('\n')+(hits.length>5?`\nو${hits.length-5} موديلات كمان`:''),[['اعرضيهم في الموقع',()=>{apply(r);closeAI();go('fxBar')}],...(hits.length<=3?hits.map(p=>['اطلبي '+p.code,()=>pick(p,r)]):[])])}
+ if(/سعر|اسعار|بكام|كام|ثمن|تمن/.test(n)){const ps=products.map(p=>p.price);return bot(`أسعارنا من ${Math.min(...ps)} لـ ${Math.max(...ps)} ج.م حسب الموديل. قوليلي نوع الموديل أو الكود وأقولك سعره بالظبط 🤍`)}
  if(/شحن|توصيل/.test(n))return bot(feeTxt());
  if(/استبدال|استرجاع|ارجاع|مرتجع/.test(n))return bot(retTxt());
- if(/اوردر|طلبي|متابع/.test(n))return QA[3][1]();
+ if(/متابع|اتابع|طلبي|حاله/.test(n))return QA[3][1]();
  if(/مقاس/.test(n)&&!/xl|l|m/.test(n)){$('sizeGuideModal').classList.add('open');return bot('فتحتلك جدول المقاسات يا فندم 🤍')}
  if(!AI_ENDPOINT)return bot('للسؤال ده أحسن حضرتك تكلمي خدمة العملاء وهيساعدوكي فورًا 🤍',[WA(q)]);
  const w=bot('ثواني يا فندم...');
