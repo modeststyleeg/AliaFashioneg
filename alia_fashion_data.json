@@ -1389,8 +1389,7 @@
       "hasColors": true,
       "sizes": [],
       "colors": [
-        "ازرق",
-        "اسود"
+        "ازرق"
       ],
       "colorSizes": {
         "ازرق": [
@@ -1398,17 +1397,10 @@
           "L",
           "XL",
           "XXL"
-        ],
-        "اسود": [
-          "M",
-          "L",
-          "XL",
-          "XXL"
         ]
       },
       "colorImages": {
-        "ازرق": "https://i.postimg.cc/7YSB0mbK/photo-3-2026-09-26-22-18-14.jpg",
-        "اسود": "https://i.postimg.cc/kM012kMp/photo-5-2026-09-26-22-18-14.jpg"
+        "ازرق": "https://i.postimg.cc/7YSB0mbK/photo-3-2026-09-26-22-18-14.jpg"
       }
     }
   ],
@@ -1433,5 +1425,5 @@
     "return": "نقبل الإرجاع والاستبدال خلال 7 أيام بشرط أن يكون المنتج بحالته الأصلية.",
     "heroVideo": "https://drive.google.com/file/d/1ou1aogoPvwDrnMnCmGwf1iT9a9oKouf9/view?usp=drive_link"
   },
-  "exportedAt": "٢٦‏/٩‏/٢٠٢٦، ١٠:٢٣:١٦ م"
+  "exportedAt": "٢٨‏/٩‏/٢٠٢٦، ٨:١٦:٢٧ ص"
 }
